@@ -22,7 +22,7 @@ const Hero = () => {
           >
             <p className="section-title mb-4">Hello, I'm</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              John Doe
+              Ojasva Goyal
               <span className="block text-2xl md:text-3xl font-normal mt-2">
                 Data Scientist & <span className="geek-accent">Drone Enthusiast</span>
               </span>
