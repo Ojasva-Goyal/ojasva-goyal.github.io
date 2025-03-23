@@ -55,7 +55,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="text-xl font-bold">
-            <span className="text-primary">Ojasva</span> Doe
+            <span className="text-primary">Ojasva</span> Goyal
           </Link>
           
           {/* Desktop Navigation */}
