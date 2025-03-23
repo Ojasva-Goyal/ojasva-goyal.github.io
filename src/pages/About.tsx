@@ -1,11 +1,9 @@
-
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Section from '@/components/Section';
-import { skills, education, honors } from '@/lib/data';
+import { skills, education } from '@/lib/data';
 import { Download, BookOpen, Award, Code, Bookmark } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import HonorCard from '@/components/HonorCard';
 
 const About = () => {
   return (
@@ -109,27 +107,6 @@ const About = () => {
             </div>
           </div>
         </section>
-        
-        {/* Honors & Awards Section */}
-        <Section 
-          title="Honors & Awards" 
-          subtitle="ACHIEVEMENTS"
-          className="bg-secondary/50"
-          divider={true}
-        >
-          <div className="space-y-8">
-            {honors.map((honor, index) => (
-              <HonorCard
-                key={honor.id}
-                title={honor.title}
-                organization={honor.organization}
-                date={honor.date}
-                description={honor.description}
-                delay={index}
-              />
-            ))}
-          </div>
-        </Section>
         
         {/* Skills Section */}
         <Section 
