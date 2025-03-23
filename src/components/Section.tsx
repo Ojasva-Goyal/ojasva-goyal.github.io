@@ -8,9 +8,10 @@ interface SectionProps {
   children: ReactNode;
   className?: string;
   id?: string;
+  divider?: boolean;
 }
 
-const Section = ({ title, subtitle, children, className = '', id }: SectionProps) => {
+const Section = ({ title, subtitle, children, className = '', id, divider = false }: SectionProps) => {
   return (
     <section 
       id={id}
@@ -26,6 +27,7 @@ const Section = ({ title, subtitle, children, className = '', id }: SectionProps
         >
           {subtitle && <p className="section-title">{subtitle}</p>}
           <h2 className="section-heading">{title}</h2>
+          {divider && <hr className="w-24 h-1 bg-primary mt-6 mb-0 border-0" />}
         </motion.div>
         
         <motion.div

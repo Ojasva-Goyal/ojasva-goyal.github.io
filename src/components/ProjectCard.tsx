@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface ProjectCardProps {
@@ -10,6 +10,7 @@ interface ProjectCardProps {
   tags: string[];
   githubUrl?: string;
   liveUrl?: string;
+  publicationUrl?: string;
   delay?: number;
 }
 
@@ -20,6 +21,7 @@ const ProjectCard = ({
   tags,
   githubUrl,
   liveUrl,
+  publicationUrl,
   delay = 0 
 }: ProjectCardProps) => {
   return (
@@ -49,12 +51,21 @@ const ProjectCard = ({
           ))}
         </div>
         
-        <div className="flex space-x-3">
+        <div className="flex flex-wrap gap-3">
           {githubUrl && (
             <Button size="sm" variant="outline" asChild>
               <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
                 <Github className="h-4 w-4" />
                 <span>Code</span>
+              </a>
+            </Button>
+          )}
+          
+          {publicationUrl && (
+            <Button size="sm" variant="secondary" asChild>
+              <a href={publicationUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
+                <BookOpen className="h-4 w-4" />
+                <span>Publication</span>
               </a>
             </Button>
           )}

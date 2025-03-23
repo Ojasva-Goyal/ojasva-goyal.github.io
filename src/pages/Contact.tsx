@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Section from '@/components/Section';
 import ContactForm from '@/components/ContactForm';
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MapPin, Phone, Github, Linkedin, Twitter, Download, Bookmark } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
@@ -87,6 +88,22 @@ const Contact = () => {
                       </p>
                     </div>
                   </div>
+                </div>
+                
+                <div className="flex flex-wrap gap-4 mt-8 mb-8">
+                  <Button className="flex items-center gap-2" asChild>
+                    <a href="/resume.pdf" download>
+                      <Download className="h-4 w-4" />
+                      <span>Download Resume</span>
+                    </a>
+                  </Button>
+                  
+                  <Button variant="outline" className="flex items-center gap-2" asChild>
+                    <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+                      <Bookmark className="h-4 w-4" />
+                      <span>Google Scholar</span>
+                    </a>
+                  </Button>
                 </div>
                 
                 <div className="mt-8">
@@ -173,8 +190,8 @@ const Contact = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                 LinkedIn
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-                Twitter
+              <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                Google Scholar
               </a>
             </div>
           </div>

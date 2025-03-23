@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
+import News from "./pages/News";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import PageTransition from "./components/PageTransition";
@@ -36,6 +37,7 @@ const App = () => {
               <Route path="/experience" element={<Experience />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/news" element={<News />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

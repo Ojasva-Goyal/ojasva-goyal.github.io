@@ -1,4 +1,3 @@
-
 export const experiences = [
   {
     id: 1,
@@ -173,5 +172,101 @@ export const education = [
       "Developed a custom autopilot system for a quadrotor",
       "Built a visual navigation system using computer vision"
     ]
+  }
+];
+
+export const honors = [
+  {
+    id: 1,
+    title: "Outstanding Research Award",
+    organization: "University AI Research Symposium",
+    date: "2023",
+    description: "Recognized for exceptional research in drone navigation systems using deep learning."
+  },
+  {
+    id: 2,
+    title: "Best Paper Award",
+    organization: "International Conference on Aerial Robotics",
+    date: "2022",
+    description: "Awarded for the paper 'Deep Reinforcement Learning for Autonomous Drone Navigation in Complex Environments'."
+  },
+  {
+    id: 3,
+    title: "Innovation in AI Scholarship",
+    organization: "Tech Innovation Foundation",
+    date: "2022",
+    description: "Merit-based scholarship awarded to students demonstrating exceptional innovation in AI applications."
+  },
+  {
+    id: 4,
+    title: "Hackathon Winner",
+    organization: "National Drone Programming Challenge",
+    date: "2021",
+    description: "First place for developing an efficient real-time object tracking system for drones."
+  }
+];
+
+export const news = [
+  {
+    id: 1,
+    title: "Research Selected for International Conference",
+    date: "May 15, 2023",
+    source: "University News",
+    description: "My work on drone swarm coordination algorithms has been selected for presentation at the International Conference on Autonomous Systems.",
+    link: "https://example.com/news1"
+  },
+  {
+    id: 2,
+    title: "Featured in Tech Magazine's '30 Under 30' List",
+    date: "March 3, 2023",
+    source: "Tech Innovators Magazine",
+    description: "Recognized among emerging talents in AI and robotics for contributions to drone technology.",
+    link: "https://example.com/news2"
+  },
+  {
+    id: 3,
+    title: "Research Grant Awarded for Drone AI Project",
+    date: "January 20, 2023",
+    source: "Research Foundation",
+    description: "Received $50,000 grant to continue research on energy-efficient path planning for autonomous drones.",
+    link: "https://example.com/news3"
+  },
+  {
+    id: 4,
+    title: "Paper Accepted in Top-Tier AI Journal",
+    date: "November 10, 2022",
+    source: "Journal of Artificial Intelligence",
+    description: "Research paper on vision-based navigation techniques for drones accepted for publication in a prestigious journal.",
+    link: "https://example.com/news4"
+  }
+];
+
+// Update projects to include publication links
+export const researchProjects = [
+  {
+    id: 1,
+    title: "Deep Learning for Drone Obstacle Avoidance",
+    description: "Novel neural network architecture for real-time obstacle detection and avoidance in dynamic environments.",
+    image: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?q=80&w=1000&auto=format&fit=crop",
+    tags: ["Deep Learning", "Computer Vision", "Robotics", "CNN"],
+    publicationUrl: "https://example.com/publication1",
+    githubUrl: "https://github.com"
+  },
+  {
+    id: 2,
+    title: "Multi-Agent Reinforcement Learning for Drone Swarms",
+    description: "Coordination algorithms enabling drone swarms to collaboratively perform complex tasks with minimal communication.",
+    image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1000&auto=format&fit=crop",
+    tags: ["Reinforcement Learning", "Multi-agent Systems", "Swarm Intelligence"],
+    publicationUrl: "https://example.com/publication2",
+    githubUrl: "https://github.com"
+  },
+  {
+    id: 3,
+    title: "Energy-Optimized Path Planning for Drones",
+    description: "Mathematical models and algorithms for energy-aware flight path planning in varying weather conditions.",
+    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1000&auto=format&fit=crop",
+    tags: ["Path Planning", "Energy Optimization", "Algorithms"],
+    publicationUrl: "https://example.com/publication3"
   }
 ];

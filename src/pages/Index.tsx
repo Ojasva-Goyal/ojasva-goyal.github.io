@@ -3,10 +3,10 @@ import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Section from '@/components/Section';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download, Bookmark } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { projects, blogPosts } from '@/lib/data';
+import { projects, blogPosts, researchProjects } from '@/lib/data';
 import ProjectCard from '@/components/ProjectCard';
 import BlogPost from '@/components/BlogPost';
 
@@ -20,6 +20,48 @@ const Index = () => {
       <Navbar />
       <main className="pt-16">
         <Hero />
+        
+        {/* Download Resume & Google Scholar Section */}
+        <div className="container mx-auto px-4 md:px-8 py-6 flex justify-center">
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Button size="lg" className="flex items-center gap-2" asChild>
+              <a href="/resume.pdf" download>
+                <Download className="h-4 w-4" />
+                <span>Download Resume</span>
+              </a>
+            </Button>
+            
+            <Button size="lg" variant="outline" className="flex items-center gap-2" asChild>
+              <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+                <Bookmark className="h-4 w-4" />
+                <span>Google Scholar</span>
+              </a>
+            </Button>
+          </div>
+        </div>
+        
+        {/* Research Projects Section */}
+        <Section 
+          title="Research Publications" 
+          subtitle="ACADEMIC CONTRIBUTIONS"
+          className="bg-secondary/50"
+          id="research"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {researchProjects.map((project, index) => (
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                tags={project.tags}
+                githubUrl={project.githubUrl}
+                publicationUrl={project.publicationUrl}
+                delay={index}
+              />
+            ))}
+          </div>
+        </Section>
         
         {/* Featured Projects Section */}
         <Section 
@@ -159,6 +201,28 @@ const Index = () => {
           </div>
         </Section>
         
+        {/* Latest News Section */}
+        <Section 
+          title="Latest News" 
+          subtitle="RECENT UPDATES"
+          className="bg-secondary/50"
+        >
+          <div className="text-center mb-8">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Check out the latest updates, recognitions, and announcements related to my research and professional journey.
+            </p>
+          </div>
+          
+          <div className="flex justify-center">
+            <Button asChild>
+              <Link to="/news" className="flex items-center gap-2">
+                <span>View All News</span>
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </Section>
+        
         {/* Call to Action */}
         <section className="py-24 px-4 md:px-8 bg-primary/5 relative overflow-hidden">
           <div className="absolute inset-0 -z-10 opacity-30">
@@ -199,8 +263,8 @@ const Index = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                 LinkedIn
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-                Twitter
+              <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                Google Scholar
               </a>
             </div>
           </div>

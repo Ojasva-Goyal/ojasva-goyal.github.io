@@ -2,9 +2,10 @@
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Section from '@/components/Section';
-import { skills, education } from '@/lib/data';
-import { Download, BookOpen, Award, Code } from 'lucide-react';
+import { skills, education, honors } from '@/lib/data';
+import { Download, BookOpen, Award, Code, Bookmark } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import HonorCard from '@/components/HonorCard';
 
 const About = () => {
   return (
@@ -37,12 +38,21 @@ const About = () => {
                   With a strong foundation in data science and machine learning, I'm excited to begin my journey as a Data Scientist at a multinational tech company upon graduation. I love tackling complex problems and creating technology that can make a positive impact.
                 </p>
                 
-                <Button className="flex items-center gap-2" asChild>
-                  <a href="#" download>
-                    <Download className="h-4 w-4" />
-                    <span>Download Resume</span>
-                  </a>
-                </Button>
+                <div className="flex flex-wrap gap-4">
+                  <Button className="flex items-center gap-2" asChild>
+                    <a href="/resume.pdf" download>
+                      <Download className="h-4 w-4" />
+                      <span>Download Resume</span>
+                    </a>
+                  </Button>
+                  
+                  <Button variant="outline" className="flex items-center gap-2" asChild>
+                    <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+                      <Bookmark className="h-4 w-4" />
+                      <span>Google Scholar</span>
+                    </a>
+                  </Button>
+                </div>
               </motion.div>
               
               <motion.div
@@ -100,11 +110,31 @@ const About = () => {
           </div>
         </section>
         
+        {/* Honors & Awards Section */}
+        <Section 
+          title="Honors & Awards" 
+          subtitle="ACHIEVEMENTS"
+          className="bg-secondary/50"
+          divider={true}
+        >
+          <div className="space-y-8">
+            {honors.map((honor, index) => (
+              <HonorCard
+                key={honor.id}
+                title={honor.title}
+                organization={honor.organization}
+                date={honor.date}
+                description={honor.description}
+                delay={index}
+              />
+            ))}
+          </div>
+        </Section>
+        
         {/* Skills Section */}
         <Section 
           title="Technical Skills" 
           subtitle="MY EXPERTISE"
-          className="bg-secondary/50"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skillGroup, index) => (
@@ -131,6 +161,7 @@ const About = () => {
         <Section 
           title="Education & Certifications" 
           subtitle="ACADEMIC BACKGROUND"
+          className="bg-secondary/50"
         >
           <div className="space-y-8">
             {education.map((edu, index) => (
@@ -176,7 +207,6 @@ const About = () => {
         <Section 
           title="Research Interests" 
           subtitle="AREAS OF FOCUS"
-          className="bg-secondary/50"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
@@ -232,8 +262,8 @@ const About = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                 LinkedIn
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-                Twitter
+              <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                Google Scholar
               </a>
             </div>
           </div>

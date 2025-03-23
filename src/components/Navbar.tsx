@@ -1,17 +1,21 @@
 
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
-import { Menu, X, Code, Database } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   
-  const toggleMenu = () => setIsOpen(!isOpen);
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
   
+  // Add scroll event listener
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -25,91 +29,109 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
-  useEffect(() => {
-    // Close mobile menu when route changes
-    setIsOpen(false);
-  }, [location.pathname]);
-  
   const navLinks = [
+    { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Experience', path: '/experience' },
     { name: 'Projects', path: '/projects' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'News', path: '/news' },
+    { name: 'Contact', path: '/contact' },
   ];
   
+  const isActive = (path: string) => {
+    // Home page is active only when path is exactly '/'
+    if (path === '/') return location.pathname === '/';
+    // For other pages, check if the current path starts with the link path
+    return location.pathname.startsWith(path);
+  };
+  
   return (
-    <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'py-2 glass-panel shadow-md' : 'py-4 bg-transparent'
-      }`}
-    >
-      <div className="container flex items-center justify-between">
-        <Link to="/" className="flex items-center space-x-2 transition-all duration-300">
-          <div className="relative">
-            <Database className="w-5 h-5 text-primary animate-spin-slow absolute opacity-40" />
-            <Code className="w-5 h-5 text-primary" />
-          </div>
-          <span className="font-mono font-bold text-xl">
-            Devfolio<span className="text-primary">/</span>
-          </span>
-        </Link>
-        
-        <nav className="hidden md:block">
-          <ul className="flex space-x-6">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <Link 
-                  to={link.path}
-                  className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        
-        <div className="flex items-center space-x-4">
-          <ThemeToggle />
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      scrolled ? 'bg-background/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
+    }`}>
+      <div className="container mx-auto px-4 md:px-8">
+        <nav className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <Link to="/" className="text-xl font-bold">
+            <span className="text-primary">John</span> Doe
+          </Link>
           
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </Button>
-        </div>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.path}
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  isActive(link.path)
+                    ? 'text-primary'
+                    : 'text-foreground/70 hover:text-foreground'
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+            
+            <div className="pl-2">
+              <ThemeToggle />
+            </div>
+          </div>
+          
+          {/* Mobile Navigation Toggle */}
+          <div className="flex items-center md:hidden">
+            <ThemeToggle />
+            
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 ml-2 rounded-md focus:outline-none"
+              aria-label="Toggle Menu"
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
+        </nav>
       </div>
       
-      {/* Mobile menu */}
-      <div 
-        className={`md:hidden glass-panel m-4 rounded-xl overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        }`}
-      >
-        <nav className="p-4">
-          <ul className="space-y-4">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <Link 
-                  to={link.path}
-                  className={`block py-2 px-4 rounded-lg ${
-                    location.pathname === link.path 
-                      ? 'bg-primary text-primary-foreground' 
-                      : 'hover:bg-secondary'
-                  }`}
+      {/* Mobile Navigation Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden bg-background/95 backdrop-blur-md"
+          >
+            <div className="container mx-auto px-4 py-3">
+              <div className="flex flex-col space-y-2">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.name}
+                    to={link.path}
+                    className={`px-3 py-2 rounded-md text-sm font-medium ${
+                      isActive(link.path)
+                        ? 'bg-primary/10 text-primary'
+                        : 'hover:bg-secondary/50'
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+                
+                <a
+                  href="https://scholar.google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 rounded-md text-sm font-medium hover:bg-secondary/50"
                 >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
+                  Google Scholar
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
