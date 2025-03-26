@@ -30,7 +30,7 @@ const Hero = () => {
             
             <p className="text-lg text-muted-foreground mb-8 max-w-lg">
               Final year undergraduate with a passion for deep learning and autonomous systems.
-              Exploring the intersection of AI and aerial robotics.
+              Exploring the intersection of AI, robotics and sustainability.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -47,19 +47,19 @@ const Hero = () => {
               
               <div className="flex items-center gap-4 ml-auto mr-0 md:ml-0 md:mr-auto lg:ml-auto mt-4 md:mt-0">
                 <Button size="icon" variant="ghost" className="rounded-full" asChild>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <a href="https://github.com/Ojasva-Goyal" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <Github className="h-5 w-5" />
                   </a>
                 </Button>
                 
                 <Button size="icon" variant="ghost" className="rounded-full" asChild>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <a href="https://linkedin.com/in/ojasva-goyal-476422230/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </Button>
                 
                 <Button size="icon" variant="ghost" className="rounded-full" asChild>
-                  <a href="mailto:example@email.com" aria-label="Email">
+                  <a href="mailto:ojasvagoyal9@gmail.com" aria-label="Email">
                     <Mail className="h-5 w-5" />
                   </a>
                 </Button>
@@ -83,9 +83,9 @@ const Hero = () => {
                 
                 <div className="glass-panel p-4 mb-4">
                   <div className="font-mono text-xs text-primary opacity-70 mb-1">LATEST PROJECT</div>
-                  <h3 className="font-medium mb-2">Autonomous Drone Navigation System</h3>
+                  <h3 className="font-medium mb-2">Autonomous UAV System for Crop Disease Monitoring</h3>
                   <p className="text-sm text-muted-foreground">
-                    Using computer vision and deep reinforcement learning to enable drones to navigate complex environments.
+                    Using computer vision and deep learning to enable drones to detect and classify different crop diseases.
                   </p>
                 </div>
                 

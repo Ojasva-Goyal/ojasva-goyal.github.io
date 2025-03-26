@@ -121,7 +121,7 @@ const Navbar = () => {
                 ))}
                 
                 <a
-                  href="https://scholar.google.com"
+                  href="https://scholar.google.com/citations?user=PC6cUHYAAAAJ&hl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-3 py-2 rounded-md text-sm font-medium hover:bg-secondary/50"

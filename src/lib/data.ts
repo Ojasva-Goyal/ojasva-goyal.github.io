@@ -10,8 +10,8 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "Research Assistant",
-    company: "University AI Lab",
+    title: "Undergraduate Researcher",
+    company: "BITS Pilani, Pilani Campus",
     date: "Jan 2023 - Present",
     description: "Working on deep learning models for drone flight path optimization and obstacle avoidance systems.",
     type: "Part-time",
@@ -19,21 +19,21 @@ export const experiences = [
   },
   {
     id: 3,
-    title: "ML Engineering Intern",
-    company: "AI Startup",
-    date: "May 2022 - Aug 2022",
-    description: "Developed computer vision algorithms for aerial image analysis and implemented real-time object detection systems.",
+    title: "BIM Researcher and Consultant",
+    company: "The University of Auckland",
+    date: "July 2023 - Aug 2023",
+    description: "Worked with Hynds Pipe Systems Ltd, which manufactures and supplies a comprehensive range of products for drainage, watermain, environmental, and rural applications. My work was to study the New Zealand business climate and the obstacles in implementing BIM there and provide the company with relevant data to decide on how to implement BIM in its operations.",
     type: "Internship",
     skills: ["OpenCV", "Neural Networks", "Image Processing", "YOLO"]
   },
   {
     id: 4,
-    title: "Undergraduate Researcher",
-    company: "Robotics Research Group",
-    date: "Sep 2021 - Dec 2022",
-    description: "Contributed to a project on autonomous navigation for quadrotors in GPS-denied environments using visual SLAM.",
-    type: "Research",
-    skills: ["SLAM", "ROS", "Sensor Fusion", "C++"]
+    title: "Summer Robotics Intern",
+    company: "P.N.T. Robotics & Automation Solutions, LLP.",
+    date: "May 2023 - July 2023",
+    description: "Researched on the navigation of MAV in GPS-denied environments. Engineered robotic arm simulations using MoveIT, increasing precision for automated tasks; integrated ArUco Markers for enhanced robot localization, improving positioning accuracy in dynamic environments. ",
+    type: "Internship",
+    skills: ["SLAM", "ROS", "Sensor Fusion", "Python"]
   }
 ];
 
