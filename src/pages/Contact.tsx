@@ -99,7 +99,7 @@ const Contact = () => {
                   </Button>
                   
                   <Button variant="outline" className="flex items-center gap-2" asChild>
-                    <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://scholar.google.com/citations?user=PC6cUHYAAAAJ&hl" target="_blank" rel="noopener noreferrer">
                       <Bookmark className="h-4 w-4" />
                       <span>Google Scholar</span>
                     </a>
@@ -110,7 +110,7 @@ const Contact = () => {
                   <h4 className="font-medium mb-4">Connect on Social Media</h4>
                   <div className="flex space-x-4">
                     <a
-                      href="https://github.com"
+                      href="https://github.com/Ojasva-Goyal"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-10 w-10 rounded-full bg-secondary hover:bg-primary/10 flex items-center justify-center transition-colors"
@@ -120,7 +120,7 @@ const Contact = () => {
                     </a>
                     
                     <a
-                      href="https://linkedin.com"
+                      href="https://linkedin.com/in/ojasva-goyal-476422230/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-10 w-10 rounded-full bg-secondary hover:bg-primary/10 flex items-center justify-center transition-colors"
@@ -184,13 +184,13 @@ const Contact = () => {
             </div>
             
             <div className="flex space-x-6">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://github.com/Ojasva-Goyal" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                 GitHub
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://linkedin.com/in/ojasva-goyal-476422230/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                 LinkedIn
               </a>
-              <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://scholar.google.com/citations?user=PC6cUHYAAAAJ&hl" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                 Google Scholar
               </a>
             </div>
