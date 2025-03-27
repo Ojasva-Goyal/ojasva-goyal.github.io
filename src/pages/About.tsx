@@ -25,7 +25,7 @@ const About = () => {
               >
                 <p className="section-title">ABOUT ME</p>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  Exploring the Intersection of AI & Robotics
+                  Exploring the Intersection of AI, Robotics & Sustainability
                 </h1>
                 
                 <p className="text-lg text-muted-foreground mb-6">
@@ -45,7 +45,7 @@ const About = () => {
                   </Button>
                   
                   <Button variant="outline" className="flex items-center gap-2" asChild>
-                    <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://scholar.google.com/citations?user=PC6cUHYAAAAJ&hl" target="_blank" rel="noopener noreferrer">
                       <Bookmark className="h-4 w-4" />
                       <span>Google Scholar</span>
                     </a>

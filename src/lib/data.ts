@@ -1,120 +1,138 @@
 export const experiences = [
   {
     id: 1,
-    title: "Data Scientist",
-    company: "Tech MNC",
-    date: "Starting June 2024",
-    description: "Will be joining as a Data Scientist after graduation, focusing on machine learning and AI applications.",
-    type: "Full-time",
-    skills: ["Machine Learning", "Data Analysis", "Python", "TensorFlow"]
+    title: "Undergraduate Researcher (Disruptive Technologies - AI/ML)",
+    company: "BITS Pilani, Pilani Campus",
+    date: "Jan 2025 – Present",
+    description:
+      "Researching multimodal learning techniques for Visual Question Answering (VQA) systems applied to advertisement analysis. Exploring transformer-based models to enhance interpretability and accuracy in ad-based VQA tasks.",
+    type: "Part-time",
+    skills: ["Multimodal Learning", "Transformers", "VQA", "Deep Learning"]
   },
   {
     id: 2,
-    title: "Undergraduate Researcher",
-    company: "BITS Pilani, Pilani Campus",
-    date: "Jan 2023 - Present",
-    description: "Working on deep learning models for drone flight path optimization and obstacle avoidance systems.",
-    type: "Part-time",
-    skills: ["Deep Learning", "Computer Vision", "PyTorch", "Drone Programming"]
+    title: "Business Data Analyst",
+    company: "Vaaree",
+    date: "July 2024 – Dec 2024",
+    description:
+      "Built a TFT-based sales forecasting model to improve sales and inventory planning. Developed portfolio health dashboards using SQL, Metabase, and Tableau. Conducted RCA for underperforming SKUs, improving profitability by 15% in specific categories.",
+    type: "Internship",
+    skills: ["Temporal Fusion Transformer", "Tableau", "SQL", "Metabase", "Sales Forecasting"]
   },
   {
     id: 3,
-    title: "BIM Researcher and Consultant",
-    company: "The University of Auckland",
-    date: "July 2023 - Aug 2023",
-    description: "Worked with Hynds Pipe Systems Ltd, which manufactures and supplies a comprehensive range of products for drainage, watermain, environmental, and rural applications. My work was to study the New Zealand business climate and the obstacles in implementing BIM there and provide the company with relevant data to decide on how to implement BIM in its operations.",
+    title: "Summer Research Intern",
+    company: "Ministry of Education, Govt. of India (CoE: AI for Agriculture)",
+    date: "May 2024 – July 2024",
+    description:
+      "Researched panoptic farm segmentation using satellite image time series for Indian districts. Results contributed to further government funding for scalable deployment.",
     type: "Internship",
-    skills: ["OpenCV", "Neural Networks", "Image Processing", "YOLO"]
+    skills: ["Remote Sensing", "Time Series Analysis", "Segmentation", "Panoptic Models"]
   },
   {
     id: 4,
-    title: "Summer Robotics Intern",
-    company: "P.N.T. Robotics & Automation Solutions, LLP.",
-    date: "May 2023 - July 2023",
-    description: "Researched on the navigation of MAV in GPS-denied environments. Engineered robotic arm simulations using MoveIT, increasing precision for automated tasks; integrated ArUco Markers for enhanced robot localization, improving positioning accuracy in dynamic environments. ",
+    title: "BIM Researcher and Consultant",
+    company: "University of Auckland",
+    date: "July 2023 – Aug 2023",
+    description:
+      "Worked with Hynds Pipe Systems Ltd to analyze New Zealand’s BIM landscape. Provided data-driven recommendations for BIM integration.",
     type: "Internship",
-    skills: ["SLAM", "ROS", "Sensor Fusion", "Python"]
+    skills: ["BIM", "Market Research", "Consulting"]
+  },
+  {
+    id: 5,
+    title: "Summer Robotics Intern",
+    company: "P.N.T. Robotics & Automation Solutions LLP",
+    date: "May 2023 – July 2023",
+    description:
+      "Researched MAV navigation in GPS-denied environments. Simulated robotic arms using MoveIT and improved localization with ArUco markers.",
+    type: "Internship",
+    skills: ["SLAM", "MoveIT", "ArUco Markers", "ROS"]
   }
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "Autonomous Drone Navigation System",
-    description: "A deep reinforcement learning approach to enable drones to navigate complex environments autonomously.",
+    title: "Visual Question Answering for Agricultural Diagnostics",
+    description:
+      "Developed a deep learning + VQA system for wheat rust detection achieving 97.69% accuracy. Published in Scientific Reports. Implemented federated learning for mobile and drone deployment.",
     image: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?q=80&w=1000&auto=format&fit=crop",
-    tags: ["Python", "TensorFlow", "Computer Vision", "Robotics"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    tags: ["VQA", "Federated Learning", "Deep Learning", "ResNet", "Agritech"],
+    githubUrl: "https://github.com/Ojasva-Goyal",
+    liveUrl: "https://doi.org/10.1038/s41598-024-79793-2"
   },
   {
     id: 2,
-    title: "Aerial Image Segmentation",
-    description: "Computer vision system for real-time semantic segmentation of aerial imagery for agricultural monitoring.",
+    title: "CycleGAN-Based Image Dehazing",
+    description:
+      "Implemented a CycleGAN from scratch to improve image clarity in hazy conditions. Enhanced performance with data augmentation techniques.",
     image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1000&auto=format&fit=crop",
-    tags: ["PyTorch", "Computer Vision", "Remote Sensing", "U-Net"],
-    githubUrl: "https://github.com"
+    tags: ["CycleGAN", "Image Processing", "Deep Learning"],
+    githubUrl: "https://github.com/Ojasva-Goyal"
   },
   {
     id: 3,
-    title: "Drone Swarm Simulation",
-    description: "Multi-agent system simulation for coordinating drone swarms with collision avoidance and path planning.",
+    title: "CNN-Based Sound Classification",
+    description:
+      "Built a 6-layer CNN model to classify 13 sound classes using Mel spectrograms. Tested multiple architectures like EfficientNet, ResNet, and MobileNetV2.",
     image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1000&auto=format&fit=crop",
-    tags: ["Python", "Multi-agent Systems", "Simulation", "AI"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    tags: ["CNN", "Audio Classification", "Librosa", "Sound Recognition"],
+    githubUrl: "https://github.com/Ojasva-Goyal"
   },
   {
     id: 4,
-    title: "Weather Prediction Model",
-    description: "Machine learning model for predicting weather conditions for optimal drone flight planning.",
+    title: "Object Tracking UAV for Indoor Surveillance",
+    description:
+      "Led development of AI-based tracking system for UAVs in indoor environments. Secured INR 50,000 funding from BITS Pilani.",
     image: "https://images.unsplash.com/photo-1534088568595-a066f410bcda?q=80&w=1000&auto=format&fit=crop",
-    tags: ["Python", "Machine Learning", "Time Series", "Data Visualization"],
-    githubUrl: "https://github.com"
+    tags: ["Drone AI", "Object Tracking", "Swarm Systems", "Indoor Navigation"],
+    githubUrl: "https://github.com/Ojasva-Goyal"
   }
 ];
 
 export const blogPosts = [
   {
     id: 1,
-    title: "Leveraging Deep Learning for Drone Navigation",
-    excerpt: "How deep neural networks are revolutionizing autonomous drone navigation in complex environments.",
-    date: "April 15, 2023",
-    readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1506947411921-a9464ded2f03?q=80&w=1000&auto=format&fit=crop",
-    tags: ["Deep Learning", "Drones", "Navigation"],
-    slug: "deep-learning-drone-navigation"
-  },
-  {
-    id: 2,
-    title: "The Future of Computer Vision in Aerial Robotics",
-    excerpt: "Exploring cutting-edge computer vision techniques that will shape the next generation of autonomous drones.",
-    date: "March 2, 2023",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
-    tags: ["Computer Vision", "Robotics", "AI"],
-    slug: "future-computer-vision-aerial-robotics"
-  },
-  {
-    id: 3,
-    title: "Optimizing Neural Networks for Edge Devices",
-    excerpt: "Techniques for deploying efficient deep learning models on resource-constrained drone hardware.",
-    date: "January 18, 2023",
-    readTime: "10 min read",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop",
-    tags: ["Edge AI", "Optimization", "Neural Networks"],
-    slug: "optimizing-neural-networks-edge-devices"
-  },
-  {
-    id: 4,
-    title: "From Data Science Classroom to Industry: My Journey",
-    excerpt: "Personal reflections on transitioning from academia to a data science role in the tech industry.",
-    date: "December 5, 2022",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1000&auto=format&fit=crop",
-    tags: ["Career", "Data Science", "Personal"],
-    slug: "data-science-classroom-to-industry"
+    title: "Choosing the Right NVIDIA Jetson Board: A Researcher’s Perspective",
+    excerpt: "Insights into how to pick the perfect NVIDIA Jetson board for AI research on edge devices.",
+    date: "March 25, 2025",
+    readTime: "7 min read",
+    image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*kZDbcyLofT1m1_1I2Zx0tQ.png",
+    tags: ["Jetson", "Edge AI", "Deep Learning"],
+    slug: "choosing-nvidia-jetson",
+    liveUrl: "https://medium.com/p/fc5afa9046d3"
   }
+  // {
+  //   id: 2,
+  //   title: "The Future of Computer Vision in Aerial Robotics",
+  //   excerpt: "Exploring cutting-edge computer vision techniques that will shape the next generation of autonomous drones.",
+  //   date: "March 2, 2023",
+  //   readTime: "6 min read",
+  //   image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
+  //   tags: ["Computer Vision", "Robotics", "AI"],
+  //   slug: "future-computer-vision-aerial-robotics"
+  // },
+  // {
+  //   id: 3,
+  //   title: "Optimizing Neural Networks for Edge Devices",
+  //   excerpt: "Techniques for deploying efficient deep learning models on resource-constrained drone hardware.",
+  //   date: "January 18, 2023",
+  //   readTime: "10 min read",
+  //   image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop",
+  //   tags: ["Edge AI", "Optimization", "Neural Networks"],
+  //   slug: "optimizing-neural-networks-edge-devices"
+  // },
+  // {
+  //   id: 4,
+  //   title: "From Data Science Classroom to Industry: My Journey",
+  //   excerpt: "Personal reflections on transitioning from academia to a data science role in the tech industry.",
+  //   date: "December 5, 2022",
+  //   readTime: "5 min read",
+  //   image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1000&auto=format&fit=crop",
+  //   tags: ["Career", "Data Science", "Personal"],
+  //   slug: "data-science-classroom-to-industry"
+  // }
 ];
 
 export const skills = [
@@ -142,67 +160,81 @@ export const skills = [
 
 export const education = [
   {
-    degree: "B.Tech in Computer Science & Engineering",
-    institution: "Technical University",
-    date: "2020 - 2024",
+    degree: "Bachelor of Engineering in Civil + Minor in Data Science",
+    institution: "Birla Institute of Technology & Science, Pilani, Pilani Campus",
+    date: "2021 - 2025",
     description: "Specializing in Artificial Intelligence and Robotics with a focus on autonomous systems.",
     achievements: [
-      "GPA: 3.9/4.0",
-      "Dean's List: All semesters",
+      "GPA: 7.63/10.0",
+      "Innovator of the Year, 2024-2025",
       "Capstone Project: Autonomous Drone Swarm for Search and Rescue Operations",
       "Research Assistant at the AI & Robotics Lab"
     ]
-  },
-  {
-    degree: "Machine Learning Specialization",
-    institution: "Coursera (Stanford University)",
-    date: "2022",
-    description: "Comprehensive online specialization covering machine learning algorithms and applications.",
-    achievements: [
-      "Completed with Distinction",
-      "Implemented various ML projects including neural networks from scratch"
-    ]
-  },
-  {
-    degree: "Drone Programming Certification",
-    institution: "Udacity",
-    date: "2021",
-    description: "Specialized course in drone programming, control systems, and autonomous navigation.",
-    achievements: [
-      "Developed a custom autopilot system for a quadrotor",
-      "Built a visual navigation system using computer vision"
-    ]
   }
+  // {
+  //   degree: "Machine Learning Specialization",
+  //   institution: "Coursera (Stanford University)",
+  //   date: "2022",
+  //   description: "Comprehensive online specialization covering machine learning algorithms and applications.",
+  //   achievements: [
+  //     "Completed with Distinction",
+  //     "Implemented various ML projects including neural networks from scratch"
+  //   ]
+  // },
+  // {
+  //   degree: "Drone Programming Certification",
+  //   institution: "Udacity",
+  //   date: "2021",
+  //   description: "Specialized course in drone programming, control systems, and autonomous navigation.",
+  //   achievements: [
+  //     "Developed a custom autopilot system for a quadrotor",
+  //     "Built a visual navigation system using computer vision"
+  //   ]
+  // }
 ];
 
 export const honors = [
   {
     id: 1,
-    title: "Outstanding Research Award",
-    organization: "University AI Research Symposium",
-    date: "2023",
-    description: "Recognized for exceptional research in drone navigation systems using deep learning."
+    title: "1st Place at ASCE CISSC-2025",
+    organization: "ASCE CISSC International Conference",
+    date: "Feb 2025",
+    description: "Presented an AI-powered UAV crop disease diagnostic system integrating deep learning, Federated Learning, and Agentic AI."
   },
   {
     id: 2,
-    title: "Best Paper Award",
-    organization: "International Conference on Aerial Robotics",
-    date: "2022",
-    description: "Awarded for the paper 'Deep Reinforcement Learning for Autonomous Drone Navigation in Complex Environments'."
+    title: "Innovator of the Year",
+    organization: "BITSAA Mantra Leadership Awards",
+    date: "Feb 2025",
+    description: "Recognized for impactful innovation at the intersection of AI and sustainability."
   },
   {
     id: 3,
-    title: "Innovation in AI Scholarship",
-    organization: "Tech Innovation Foundation",
-    date: "2022",
-    description: "Merit-based scholarship awarded to students demonstrating exceptional innovation in AI applications."
+    title: "Top 20 in Hackathon 7.0",
+    organization: "Cisco ThingQbator",
+    date: "Dec 2024",
+    description: "Shortlisted in top 20 out of 1000+ teams for innovative AI solutions."
   },
   {
     id: 4,
-    title: "Hackathon Winner",
-    organization: "National Drone Programming Challenge",
-    date: "2021",
-    description: "First place for developing an efficient real-time object tracking system for drones."
+    title: "Amazon ML Challenge – Rank 166/75,000",
+    organization: "Amazon",
+    date: "Sep 2024",
+    description: "Ranked in top 0.2% participants nationally."
+  },
+  {
+    id: 5,
+    title: "Winner – Nucleus: The Tech Show",
+    organization: "BITS-TEC of DST, GOI",
+    date: "Feb 2024",
+    description: "Won 1st place and cash prize of INR 10,000."
+  },
+  {
+    id: 6,
+    title: "Microsoft for Startups – Founders Hub Selection",
+    organization: "Microsoft/Nasscom ThingQbator",
+    date: "Jul 2024",
+    description: "Selected for prototyping stage for startup 'ePlast'."
   }
 ];
 
