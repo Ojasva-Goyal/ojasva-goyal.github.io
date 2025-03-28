@@ -1,3 +1,4 @@
+
 export const experiences = [
   {
     id: 1,
@@ -57,7 +58,7 @@ export const projects = [
     title: "Visual Question Answering for Agricultural Diagnostics",
     description:
       "Developed a deep learning + VQA system for wheat rust detection achieving 97.69% accuracy. Published in Scientific Reports. Implemented federated learning for mobile and drone deployment.",
-    image: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1465308452258-1fb57e417da2?q=80&w=1000&auto=format&fit=crop",
     tags: ["VQA", "Federated Learning", "Deep Learning", "ResNet", "Agritech"],
     githubUrl: "https://github.com/Ojasva-Goyal",
     liveUrl: "https://doi.org/10.1038/s41598-024-79793-2"
@@ -67,7 +68,7 @@ export const projects = [
     title: "CycleGAN-Based Image Dehazing",
     description:
       "Implemented a CycleGAN from scratch to improve image clarity in hazy conditions. Enhanced performance with data augmentation techniques.",
-    image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1525874684015-58379d421a52?q=80&w=1000&auto=format&fit=crop",
     tags: ["CycleGAN", "Image Processing", "Deep Learning"],
     githubUrl: "https://github.com/Ojasva-Goyal/CycleGAN-based-Image-Dehazing"
   },
@@ -76,7 +77,7 @@ export const projects = [
     title: "CNN-Based Sound Classification for Multi-Class Recognition",
     description:
       "Built a 6-layer CNN model to classify 13 sound classes using Mel spectrograms. Tested multiple architectures like EfficientNet, ResNet, and MobileNetV2.",
-    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1576400883215-7083980b6193?q=80&w=1000&auto=format&fit=crop",
     tags: ["CNN", "Audio Classification", "Librosa", "Sound Recognition"],
     githubUrl: "https://github.com/Ojasva-Goyal/CNN-Based-Sound-Classification-for-Multi-Class-Recognition"
   },
@@ -85,7 +86,7 @@ export const projects = [
     title: "Object Tracking UAV for Indoor Surveillance",
     description:
       "Led development of AI-based tracking system for UAVs in indoor environments. Secured INR 50,000 funding from BITS Pilani.",
-    image: "https://unsplash.com/photos/turned-on-black-quadcopter-drone-DiTiYQx0mh4",
+    image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1000&auto=format&fit=crop",
     tags: ["Drone AI", "Object Tracking", "Swarm Systems", "Indoor Navigation"],
     githubUrl: "https://docs.google.com/presentation/d/1oZg8C2DB7iLsiBUHgs5iLaVPEl1W15QWWSvR1uvbrQk/edit?usp=sharing"
   }

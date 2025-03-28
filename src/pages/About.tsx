@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Section from '@/components/Section';
@@ -38,7 +39,7 @@ const About = () => {
                 
                 <div className="flex flex-wrap gap-4">
                   <Button className="flex items-center gap-2" asChild>
-                    <a href="/resume.pdf" download>
+                    <a href="https://github.com/Ojasva-Goyal/ojasva-portfolio/raw/main/resume.pdf" download>
                       <Download className="h-4 w-4" />
                       <span>Download Resume</span>
                     </a>
