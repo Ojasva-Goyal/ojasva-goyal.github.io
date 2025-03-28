@@ -87,8 +87,8 @@ const Contact = () => {
                         Available upon request
                       </p>
                     </div>
-                  </div>
-                </div> */}
+                  </div> */}
+                </div>
                 
                 <div className="flex flex-wrap gap-4 mt-8 mb-8">
                   <Button className="flex items-center gap-2" asChild>
