@@ -16,10 +16,17 @@ const ThemeToggle = () => {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
-    const initialTheme = savedTheme || 'dark'; // Always default to dark
+    const initialTheme = savedTheme || 'dark';
+  
     setTheme(initialTheme);
-    document.documentElement.classList.toggle('dark', initialTheme === 'dark');
+  
+    if (initialTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }, []);
+  
   
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -27,6 +34,8 @@ const ThemeToggle = () => {
     document.documentElement.classList.toggle('dark', newTheme === 'dark');
     localStorage.setItem('theme', newTheme);
   };
+
+  
   
   return (
     <Button
