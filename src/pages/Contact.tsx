@@ -59,8 +59,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-medium mb-1">Email</h4>
-                      <a href="mailto:example@email.com" className="text-muted-foreground hover:text-primary transition-colors">
-                        example@email.com
+                      <a href="mailto:ojasvagoyal9@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                        ojasvagoyal9@gmail.com
                       </a>
                     </div>
                   </div>
@@ -72,12 +72,12 @@ const Contact = () => {
                     <div>
                       <h4 className="font-medium mb-1">Location</h4>
                       <p className="text-muted-foreground">
-                        City, Country
+                        INDIA
                       </p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
+                  {/* <div className="flex items-start">
                     <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
@@ -88,11 +88,11 @@ const Contact = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 
                 <div className="flex flex-wrap gap-4 mt-8 mb-8">
                   <Button className="flex items-center gap-2" asChild>
-                    <a href="/resume.pdf" download>
+                    <a href="Ojasva-Goyal/ojasva-portfolio/resume.pdf" download>
                       <Download className="h-4 w-4" />
                       <span>Download Resume</span>
                     </a>
@@ -169,7 +169,7 @@ const Contact = () => {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Open to Opportunities</h2>
               <p className="text-lg text-muted-foreground mb-0 max-w-lg mx-auto">
-                While I'm currently joining as a Data Scientist at an MNC, I'm always open to discussing interesting projects and collaborations.
+                I'm always open to discussing interesting projects and collaborations.
               </p>
             </motion.div>
           </div>

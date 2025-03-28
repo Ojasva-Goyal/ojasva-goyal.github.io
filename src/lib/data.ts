@@ -69,25 +69,25 @@ export const projects = [
       "Implemented a CycleGAN from scratch to improve image clarity in hazy conditions. Enhanced performance with data augmentation techniques.",
     image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1000&auto=format&fit=crop",
     tags: ["CycleGAN", "Image Processing", "Deep Learning"],
-    githubUrl: "https://github.com/Ojasva-Goyal"
+    githubUrl: "https://github.com/Ojasva-Goyal/CycleGAN-based-Image-Dehazing"
   },
   {
     id: 3,
-    title: "CNN-Based Sound Classification",
+    title: "CNN-Based Sound Classification for Multi-Class Recognition",
     description:
       "Built a 6-layer CNN model to classify 13 sound classes using Mel spectrograms. Tested multiple architectures like EfficientNet, ResNet, and MobileNetV2.",
     image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1000&auto=format&fit=crop",
     tags: ["CNN", "Audio Classification", "Librosa", "Sound Recognition"],
-    githubUrl: "https://github.com/Ojasva-Goyal"
+    githubUrl: "https://github.com/Ojasva-Goyal/CNN-Based-Sound-Classification-for-Multi-Class-Recognition"
   },
   {
     id: 4,
     title: "Object Tracking UAV for Indoor Surveillance",
     description:
       "Led development of AI-based tracking system for UAVs in indoor environments. Secured INR 50,000 funding from BITS Pilani.",
-    image: "https://images.unsplash.com/photo-1534088568595-a066f410bcda?q=80&w=1000&auto=format&fit=crop",
+    image: "https://unsplash.com/photos/turned-on-black-quadcopter-drone-DiTiYQx0mh4",
     tags: ["Drone AI", "Object Tracking", "Swarm Systems", "Indoor Navigation"],
-    githubUrl: "https://github.com/Ojasva-Goyal"
+    githubUrl: "https://docs.google.com/presentation/d/1oZg8C2DB7iLsiBUHgs5iLaVPEl1W15QWWSvR1uvbrQk/edit?usp=sharing"
   }
 ];
 
