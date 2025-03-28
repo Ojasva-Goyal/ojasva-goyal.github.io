@@ -29,7 +29,7 @@ const About = () => {
                 </h1>
                 
                 <p className="text-lg text-muted-foreground mb-6">
-                  I'm a final year undergraduate student specializing in Computer Science with a focus on artificial intelligence and drone technology. My passion lies in developing innovative solutions at the intersection of deep learning and autonomous systems.
+                  I'm a final year undergraduate student pursing my bachelors in Civil and Data Science with a focus on artificial intelligence and drone technology. My passion lies in developing innovative solutions at the intersection of deep learning and autonomous systems.
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
@@ -68,7 +68,7 @@ const About = () => {
                         <BookOpen className="h-8 w-8 text-primary mb-2" />
                         <h3 className="text-xl font-bold mb-1">Education</h3>
                         <p className="text-sm text-muted-foreground">
-                          B.Tech in Computer Science & Engineering
+                          B.E. in Civil Engineering + Minor in Data Science
                         </p>
                       </div>
                       
