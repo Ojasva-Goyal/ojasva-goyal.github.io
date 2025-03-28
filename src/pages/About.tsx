@@ -33,7 +33,7 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
-                  With a strong foundation in data science and machine learning, I'm excited to begin my journey as a Data Scientist at a multinational tech company upon graduation. I love tackling complex problems and creating technology that can make a positive impact.
+                  With a strong foundation in data science and machine learning, I'm excited to begin my journey as a Data Scientist upon graduation. I love tackling complex problems and creating technology that can make a positive impact.
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
