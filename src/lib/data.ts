@@ -252,7 +252,7 @@ export const news = [
     title: "Featured in BITS Institute-wide Newsletter, Bitsology",
     date: "February, 2025",
     source: "Tech Innovators Magazine",
-    description: "Recognized among emerging talents in AI and robotics for contributions to drone technology.",
+    description: "Featured for our recent award at ASCE Conference",
     link: "https://www.bits-pilani.ac.in/BITSology/"
   }
   // {
