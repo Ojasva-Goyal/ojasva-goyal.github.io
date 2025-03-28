@@ -143,9 +143,9 @@ const Experience = () => {
               className="glass-panel p-6 text-center"
             >
               <Award className="h-12 w-12 mx-auto text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">University Hackathon Winner</h3>
+              <h3 className="text-xl font-bold mb-2">Nucleus: The Tech Show Winner</h3>
               <p className="text-muted-foreground">
-                First place in the annual AI & Robotics Hackathon with a drone-based solution for wildfire detection.
+                First place in the startup category in Nucleus: The Tech Show with a drone-based solution for disaster management.
               </p>
             </motion.div>
             
@@ -159,7 +159,7 @@ const Experience = () => {
               <Award className="h-12 w-12 mx-auto text-primary mb-4" />
               <h3 className="text-xl font-bold mb-2">Research Publication</h3>
               <p className="text-muted-foreground">
-                Co-authored a paper on deep reinforcement learning for drone navigation, published in a peer-reviewed conference.
+                Co-authored research papers on deep-learning for wheat rust detection, published in a peer-reviewed journals.
               </p>
             </motion.div>
             
@@ -171,9 +171,9 @@ const Experience = () => {
               className="glass-panel p-6 text-center"
             >
               <Award className="h-12 w-12 mx-auto text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">ML Competition Finalist</h3>
+              <h3 className="text-xl font-bold mb-2">Innovator of the Year, 2024-2025</h3>
               <p className="text-muted-foreground">
-                Reached the finals of a national machine learning competition with a novel approach to aerial image analysis.
+                Received the Innovator of the Year Award by BITSAA & CEL(Centre of Entreprenuership & Leadership) for my deep-tech startup and innovation in the DL framework.
               </p>
             </motion.div>
           </div>
