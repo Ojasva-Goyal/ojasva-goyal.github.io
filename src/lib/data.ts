@@ -1,4 +1,3 @@
-
 export const experiences = [
   {
     id: 1,
@@ -58,7 +57,7 @@ export const projects = [
     title: "Visual Question Answering for Agricultural Diagnostics",
     description:
       "Developed a deep learning + VQA system for wheat rust detection achieving 97.69% accuracy. Published in Scientific Reports. Implemented federated learning for mobile and drone deployment.",
-    image: "https://images.unsplash.com/photo-1465308452258-1fb57e417da2?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000&auto=format&fit=crop",
     tags: ["VQA", "Federated Learning", "Deep Learning", "ResNet", "Agritech"],
     githubUrl: "https://github.com/Ojasva-Goyal",
     liveUrl: "https://doi.org/10.1038/s41598-024-79793-2"
@@ -68,7 +67,7 @@ export const projects = [
     title: "CycleGAN-Based Image Dehazing",
     description:
       "Implemented a CycleGAN from scratch to improve image clarity in hazy conditions. Enhanced performance with data augmentation techniques.",
-    image: "https://images.unsplash.com/photo-1525874684015-58379d421a52?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1543039717-b4d407503ac6?q=80&w=1000&auto=format&fit=crop",
     tags: ["CycleGAN", "Image Processing", "Deep Learning"],
     githubUrl: "https://github.com/Ojasva-Goyal/CycleGAN-based-Image-Dehazing"
   },
@@ -77,7 +76,7 @@ export const projects = [
     title: "CNN-Based Sound Classification for Multi-Class Recognition",
     description:
       "Built a 6-layer CNN model to classify 13 sound classes using Mel spectrograms. Tested multiple architectures like EfficientNet, ResNet, and MobileNetV2.",
-    image: "https://images.unsplash.com/photo-1576400883215-7083980b6193?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1000&auto=format&fit=crop",
     tags: ["CNN", "Audio Classification", "Librosa", "Sound Recognition"],
     githubUrl: "https://github.com/Ojasva-Goyal/CNN-Based-Sound-Classification-for-Multi-Class-Recognition"
   },
@@ -86,7 +85,7 @@ export const projects = [
     title: "Object Tracking UAV for Indoor Surveillance",
     description:
       "Led development of AI-based tracking system for UAVs in indoor environments. Secured INR 50,000 funding from BITS Pilani.",
-    image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1000&auto=format&fit=crop",
     tags: ["Drone AI", "Object Tracking", "Swarm Systems", "Indoor Navigation"],
     githubUrl: "https://docs.google.com/presentation/d/1oZg8C2DB7iLsiBUHgs5iLaVPEl1W15QWWSvR1uvbrQk/edit?usp=sharing"
   }
@@ -95,45 +94,15 @@ export const projects = [
 export const blogPosts = [
   {
     id: 1,
-    title: "Choosing the Right NVIDIA Jetson Board: A Researcher’s Perspective",
+    title: "Choosing the Right NVIDIA Jetson Board: A Researcher's Perspective",
     excerpt: "Insights into how to pick the perfect NVIDIA Jetson board for AI research on edge devices.",
     date: "March 25, 2025",
     readTime: "7 min read",
-    image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*kZDbcyLofT1m1_1I2Zx0tQ.png",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
     tags: ["Jetson", "Edge AI", "Deep Learning"],
     slug: "choosing-nvidia-jetson",
     liveUrl: "https://medium.com/p/fc5afa9046d3"
   }
-  // {
-  //   id: 2,
-  //   title: "The Future of Computer Vision in Aerial Robotics",
-  //   excerpt: "Exploring cutting-edge computer vision techniques that will shape the next generation of autonomous drones.",
-  //   date: "March 2, 2023",
-  //   readTime: "6 min read",
-  //   image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
-  //   tags: ["Computer Vision", "Robotics", "AI"],
-  //   slug: "future-computer-vision-aerial-robotics"
-  // },
-  // {
-  //   id: 3,
-  //   title: "Optimizing Neural Networks for Edge Devices",
-  //   excerpt: "Techniques for deploying efficient deep learning models on resource-constrained drone hardware.",
-  //   date: "January 18, 2023",
-  //   readTime: "10 min read",
-  //   image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop",
-  //   tags: ["Edge AI", "Optimization", "Neural Networks"],
-  //   slug: "optimizing-neural-networks-edge-devices"
-  // },
-  // {
-  //   id: 4,
-  //   title: "From Data Science Classroom to Industry: My Journey",
-  //   excerpt: "Personal reflections on transitioning from academia to a data science role in the tech industry.",
-  //   date: "December 5, 2022",
-  //   readTime: "5 min read",
-  //   image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1000&auto=format&fit=crop",
-  //   tags: ["Career", "Data Science", "Personal"],
-  //   slug: "data-science-classroom-to-industry"
-  // }
 ];
 
 export const skills = [

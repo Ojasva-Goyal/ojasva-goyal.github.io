@@ -79,44 +79,47 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    @apply font-mono antialiased;
+    @apply bg-background text-foreground font-mono antialiased;
+    background-color: #080E1A;
     background-image: 
-      radial-gradient(circle at 25px 25px, rgba(0, 0, 255, 0.05) 2%, transparent 0%),
-      radial-gradient(circle at 75px 75px, rgba(0, 0, 255, 0.05) 2%, transparent 0%);
-    background-size: 100px 100px;
+      linear-gradient(rgba(0, 30, 60, 0.15) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 30, 60, 0.15) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-position: center center;
   }
   
   code {
-    @apply font-mono text-primary text-sm bg-primary/5 px-1 py-0.5 rounded;
+    @apply font-mono text-primary text-sm bg-primary/10 px-1 py-0.5 rounded border border-primary/20;
+    text-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
   }
   
   pre {
-    @apply p-4 rounded-lg bg-secondary/70 border border-border overflow-x-auto;
+    @apply p-4 rounded-lg bg-[#0F172A] border border-primary/20 overflow-x-auto shadow-lg;
+    box-shadow: 0 4px 20px -5px rgba(59, 130, 246, 0.4);
   }
 }
 
 @layer components {
   .glass-panel {
-    @apply bg-white/10 dark:bg-white/5 backdrop-blur-lg border border-white/20 dark:border-white/10 rounded-xl shadow-lg;
-    box-shadow: 0 8px 32px rgba(0, 0, 255, 0.1);
+    @apply bg-black/30 backdrop-blur-lg border border-white/10 rounded-xl shadow-lg;
+    box-shadow: 0 8px 32px rgba(0, 100, 255, 0.15);
   }
   
   .glass-card {
-    @apply bg-white/70 dark:bg-black/30 backdrop-blur-xl border border-white/30 dark:border-white/10 rounded-xl shadow-xl transition-all duration-300;
-    box-shadow: 0 8px 32px rgba(0, 0, 255, 0.1);
+    @apply bg-black/40 backdrop-blur-xl border border-white/10 rounded-xl shadow-xl transition-all duration-300;
+    box-shadow: 0 8px 32px rgba(0, 100, 255, 0.15);
   }
   
   .section-heading {
     @apply text-3xl md:text-4xl font-bold mb-6 relative inline-block font-mono;
     @apply after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary after:scale-x-0 after:origin-bottom-left after:transition-transform after:duration-300;
     @apply hover:after:scale-x-100;
-    text-shadow: 0 0 8px rgba(0, 0, 255, 0.15);
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
   }
   
   .section-title {
-    @apply font-mono text-sm text-primary dark:text-primary uppercase tracking-wider mb-2;
-    text-shadow: 0 0 8px rgba(0, 0, 255, 0.2);
+    @apply font-mono text-sm text-primary uppercase tracking-wider mb-2;
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
   }
   
   .nav-link {
@@ -127,6 +130,7 @@
   
   .nav-link.active {
     @apply text-primary after:scale-x-100;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
   }
   
   .project-card {
@@ -154,12 +158,13 @@
   }
   
   .tag {
-    @apply bg-secondary dark:bg-secondary text-secondary-foreground dark:text-secondary-foreground rounded-full px-3 py-1 text-xs font-mono;
-    border: 1px solid rgba(59, 130, 246, 0.2);
+    @apply bg-black/50 text-primary/90 rounded-full px-3 py-1 text-xs font-mono border border-primary/30;
+    text-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
   }
   
   .geek-accent {
     @apply bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent;
+    text-shadow: 0 0 2px rgba(59, 130, 246, 0.1);
   }
   
   .matrix-bg {
@@ -170,5 +175,33 @@
   .terminal-text {
     @apply font-mono text-primary;
     text-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  
+  .cyber-glow {
+    @apply bg-black/50 border border-primary/30 rounded-lg overflow-hidden;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3), inset 0 0 15px rgba(59, 130, 246, 0.1);
+  }
+  
+  .cyber-button {
+    @apply bg-black/60 border border-primary/40 rounded px-4 py-2 text-primary font-mono transition-all duration-300;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+  }
+  
+  .cyber-button:hover {
+    @apply border-primary/70;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+    text-shadow: 0 0 5px rgba(59, 130, 246, 0.7);
+  }
+  
+  .tech-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.7), transparent);
+  }
+  
+  .techno-grid {
+    background-size: 50px 50px;
+    background-image: 
+      linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
   }
 }
