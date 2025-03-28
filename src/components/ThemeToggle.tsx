@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Terminal } from 'lucide-react';
+import { Moon, Sun } from 'lucide-react';
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState('dark');
@@ -30,9 +30,9 @@ const ThemeToggle = () => {
       className="w-10 h-10 rounded-full transition-all duration-300 ease-in-out cyber-glow p-0 flex items-center justify-center"
     >
       {theme === 'light' ? (
-        <Moon className="h-5 w-5 text-foreground animate-slide-up" />
+        <Moon className="h-5 w-5 text-primary animate-slide-up" />
       ) : (
-        <Terminal className="h-5 w-5 text-primary animate-slide-down" />
+        <Sun className="h-5 w-5 text-primary animate-slide-down" />
       )}
     </Button>
   );
