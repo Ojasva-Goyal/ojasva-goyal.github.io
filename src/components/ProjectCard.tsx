@@ -52,7 +52,7 @@ const ProjectCard = ({
         />
       </div>
       
-      <div className="p-6 backdrop-blur-sm bg-black/30">
+      <div className="p-6 backdrop-blur-sm dark:bg-black/40 light:bg-white/90">
         <h3 className="text-xl font-bold mb-2 terminal-text">{title}</h3>
         <p className="text-muted-foreground mb-4 font-mono text-sm">{description}</p>
         
