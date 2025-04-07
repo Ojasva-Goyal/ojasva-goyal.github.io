@@ -52,7 +52,7 @@ const BlogPost = ({
         />
       </div>
       
-      <div className="p-6 backdrop-blur-sm bg-black/30 dark:bg-black/30 light:bg-white/80">
+      <div className="p-6 backdrop-blur-sm dark:bg-black/30 light:bg-white/80">
         <div className="flex flex-wrap gap-2 mb-3">
           {tags.map((tag) => (
             <span key={tag} className="tag">{tag}</span>

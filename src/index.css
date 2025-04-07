@@ -251,16 +251,16 @@
   }
   
   .cyber-button {
-    @apply border rounded px-4 py-2 text-primary font-mono transition-all duration-300;
+    @apply border rounded px-4 py-2 font-mono transition-all duration-300;
   }
   
   .light .cyber-button {
-    @apply bg-gray-50/80 border-primary/30;
+    @apply bg-gray-50/80 border-primary/30 text-primary;
     box-shadow: 0 0 10px rgba(59, 130, 246, 0.1);
   }
   
   .dark .cyber-button {
-    @apply bg-black/60 border-primary/40;
+    @apply bg-black/60 border-primary/40 text-foreground;
     box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
   }
   

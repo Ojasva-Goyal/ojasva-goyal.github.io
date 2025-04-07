@@ -19,10 +19,16 @@ import PageTransition from "./components/PageTransition";
 const queryClient = new QueryClient();
 
 const App = () => {
-  // Check for saved theme
+  // Set dark theme as default
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem("theme") || "dark";
     document.documentElement.classList.toggle("dark", savedTheme === "dark");
+    
+    // If no theme is saved, set dark theme as default
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
+    }
   }, []);
 
   return (

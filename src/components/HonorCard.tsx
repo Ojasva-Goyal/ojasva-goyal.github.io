@@ -31,10 +31,10 @@ const HonorCard = ({
         </div>
       </div>
       
-      <div>
-        <div className="flex flex-wrap justify-between items-start gap-2 mb-1">
+      <div className="flex-grow">
+        <div className="flex items-start justify-between mb-1">
           <h3 className="text-lg font-bold">{title}</h3>
-          <span className="px-2 py-0.5 bg-secondary text-secondary-foreground rounded-full text-xs">
+          <span className="px-2 py-0.5 bg-secondary text-secondary-foreground rounded-full text-xs whitespace-nowrap ml-2">
             {date}
           </span>
         </div>

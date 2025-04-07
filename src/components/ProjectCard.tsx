@@ -65,7 +65,7 @@ const ProjectCard = ({
         <div className="flex flex-wrap gap-3">
           {githubUrl && (
             <Button size="sm" variant="outline" asChild className="cyber-button">
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-foreground">
                 <Github className="h-4 w-4" />
                 <span>Code</span>
               </a>
@@ -74,7 +74,7 @@ const ProjectCard = ({
           
           {publicationUrl && (
             <Button size="sm" variant="secondary" asChild className="cyber-button">
-              <a href={publicationUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
+              <a href={publicationUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-foreground">
                 <BookOpen className="h-4 w-4" />
                 <span>Publication</span>
               </a>
@@ -83,7 +83,7 @@ const ProjectCard = ({
           
           {liveUrl && (
             <Button size="sm" variant="default" asChild className="cyber-button">
-              <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
+              <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-foreground">
                 <ExternalLink className="h-4 w-4" />
                 <span>Live Demo</span>
               </a>

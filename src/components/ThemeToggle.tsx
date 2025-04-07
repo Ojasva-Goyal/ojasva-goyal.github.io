@@ -7,11 +7,17 @@ const ThemeToggle = () => {
   const [theme, setTheme] = useState('dark');
   
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    const initialTheme = savedTheme || 'dark';
+    // Always set dark theme as default regardless of device preference
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     
-    setTheme(initialTheme);
-    document.documentElement.classList.toggle('dark', initialTheme === 'dark');
+    setTheme(savedTheme);
+    document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+    
+    // Explicitly set dark theme if no theme is saved
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add('dark');
+    }
   }, []);
   
   const toggleTheme = () => {
