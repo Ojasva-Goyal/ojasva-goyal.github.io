@@ -40,7 +40,7 @@ const About = () => {
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
-                  <Button className="flex items-center gap-2 glass-panel bg-primary hover:bg-primary/80" asChild>
+                  <Button className="flex items-center gap-2 glass-panel bg-primary hover:bg-primary/80 dark:text-white" asChild>
                     <a href="https://github.com/Ojasva-Goyal/ojasva-portfolio/raw/main/resume.pdf" download>
                       <Download className="h-4 w-4" />
                       <span>Download Resume</span>
