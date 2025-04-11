@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -26,23 +27,50 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Message sent!",
-      description: "I'll get back to you as soon as possible.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-    
-    setIsSubmitting(false);
+    try {
+      // Submit form data to Supabase
+      const { error } = await supabase
+        .from('contact_messages')
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message
+          }
+        ]);
+      
+      if (error) {
+        console.error('Error submitting form:', error);
+        toast({
+          title: "Something went wrong!",
+          description: "Failed to send your message. Please try again later.",
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Message sent!",
+          description: "I'll get back to you as soon as possible.",
+        });
+        
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      }
+    } catch (err) {
+      console.error('Unexpected error:', err);
+      toast({
+        title: "Something went wrong!",
+        description: "Failed to send your message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   
   return (
