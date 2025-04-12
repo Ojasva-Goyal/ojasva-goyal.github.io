@@ -1,69 +1,123 @@
-# Welcome to your Lovable project
+# Ojasva Goyal - Portfolio
 
-## Project info
+Welcome to the repository for my personal portfolio website! This project showcases my skills, experience, and projects in an interactive way.
 
-**URL**: https://lovable.dev/projects/7fa394e5-0031-4a83-8dcb-c9ee811ef91c
+## 🌐 Live Demo
 
-## How can I edit this code?
+You can view the live version of the portfolio here: [Ojasva Goyal Portfolio](https://ojasva-goyal.github.io)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 📂 Project Structure
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7fa394e5-0031-4a83-8dcb-c9ee811ef91c) and start prompting.
+The project is built using modern web technologies and follows a modular structure for scalability and maintainability.
 
-Changes made via Lovable will be committed automatically to this repo.
+### Key Directories:
+- **`src/`**: Contains the source code for the application.
+  - **`components/`**: Reusable React components.
+  - **`pages/`**: Individual pages for the portfolio (e.g., Home, About, Projects).
+  - **`styles/`**: Tailwind CSS configurations and custom styles.
+- **`public/`**: Static assets like images and the `_redirects` file for routing.
+- **`dist/`**: The production build of the application (generated after running `npm run build`).
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This portfolio is built with the following technologies:
 
-Follow these steps:
+- **[React](https://reactjs.org/)**: For building the user interface.
+- **[Vite](https://vitejs.dev/)**: A fast build tool for modern web projects.
+- **[TypeScript](https://www.typescriptlang.org/)**: For type safety and better developer experience.
+- **[Tailwind CSS](https://tailwindcss.com/)**: For styling the application.
+- **[shadcn/ui](https://shadcn.dev/)**: For prebuilt UI components.
+- **[React Router](https://reactrouter.com/)**: For client-side routing.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Getting Started
 
-# Step 3: Install the necessary dependencies.
-npm i
+Follow these steps to set up the project locally:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/) (v7 or higher)
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ojasva-goyal/ojasva-portfolio.git
+   ```
+
+### 2. Navigate to the project directory:
+
+```bash
+cd ojasva-portfolio
+```
+
+### 3. Install dependencies:
+
+```bash
+npm install
+```
+
+### 4. Start the development server:
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### 5. Open your browser and visit:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:8080
+```
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🛠️ Building and Deployment
 
-## What technologies are used for this project?
+### To build the project for production:
 
-This project is built with .
+```bash
+npm run build
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The production-ready files will be in the `dist/` folder.
 
-## How can I deploy this project?
+### Deploying to GitHub Pages
 
-Simply open [Lovable](https://lovable.dev/projects/7fa394e5-0031-4a83-8dcb-c9ee811ef91c) and click on Share -> Publish.
+1. Build the project:
 
-## I want to use a custom domain - is that possible?
+```bash
+npm run build
+```
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+2. Push the `dist` folder to the `gh-pages` branch:
+
+```bash
+git add dist -f
+git commit -m "Deploy portfolio"
+git subtree push --prefix dist origin gh-pages
+```
+
+---
+
+## ✨ Features
+
+- **Responsive Design**: Fully responsive and optimized for all devices.
+- **Interactive UI**: Smooth animations and transitions for a better user experience.
+- **Dynamic Content**: Easily update content like projects, skills, and experience.
+- **Fast Loading**: Optimized for performance using Vite and Tailwind CSS.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
