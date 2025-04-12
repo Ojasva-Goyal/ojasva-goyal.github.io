@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/ojasva-portfolio/", // GitHub Pages repo name
+  base: "/", // GitHub Pages repo name
   plugins: [
     react(),
     mode === 'development' &&
