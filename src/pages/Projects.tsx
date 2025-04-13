@@ -62,15 +62,15 @@ const Projects = () => {
               All Projects
             </Button>
             
-            {allTags.map(tag => (
+            {allTags.map((tag) => (
               <Button
-                key={tag}
+                key={tag as React.Key}
                 variant={filter === tag ? 'default' : 'outline'}
                 size="sm"
-                onClick={() => setFilter(tag)}
+                onClick={() => setFilter(tag as string)}
                 className="rounded-full"
               >
-                {tag}
+                {tag as React.ReactNode}
               </Button>
             ))}
           </div>
