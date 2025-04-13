@@ -1,7 +1,6 @@
 
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 interface PageTransitionProps {
   children: React.ReactNode;
@@ -20,6 +19,8 @@ const PageTransition = ({ children }: PageTransitionProps) => {
     if (transitionStage === "fadeOut") {
       setTransitionStage("fadeIn");
       setDisplayLocation(location);
+      // Scroll to top when navigating between pages
+      window.scrollTo(0, 0);
     }
   };
 

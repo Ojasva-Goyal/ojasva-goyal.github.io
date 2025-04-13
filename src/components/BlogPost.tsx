@@ -1,7 +1,8 @@
 
 import { motion } from 'framer-motion';
-import { CalendarDays, Clock, Code } from 'lucide-react';
+import { CalendarDays, Clock, Code, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 interface BlogPostProps {
   title: string;
@@ -12,6 +13,7 @@ interface BlogPostProps {
   tags: string[];
   slug: string;
   index: number;
+  liveUrl?: string; // Add optional liveUrl prop
 }
 
 const BlogPost = ({ 
@@ -22,7 +24,8 @@ const BlogPost = ({
   image,
   tags,
   slug,
-  index 
+  index,
+  liveUrl
 }: BlogPostProps) => {
   return (
     <motion.article
@@ -65,15 +68,31 @@ const BlogPost = ({
         
         <p className="text-muted-foreground mb-4 line-clamp-2 font-mono text-sm">{excerpt}</p>
         
-        <div className="flex items-center text-sm text-muted-foreground font-mono">
-          <div className="flex items-center mr-4">
-            <CalendarDays className="h-4 w-4 mr-1 opacity-70 text-primary" />
-            <span>{date}</span>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center text-sm text-muted-foreground font-mono">
+            <div className="flex items-center mr-4">
+              <CalendarDays className="h-4 w-4 mr-1 opacity-70 text-primary" />
+              <span>{date}</span>
+            </div>
+            <div className="flex items-center">
+              <Clock className="h-4 w-4 mr-1 opacity-70 text-primary" />
+              <span>{readTime}</span>
+            </div>
           </div>
-          <div className="flex items-center">
-            <Clock className="h-4 w-4 mr-1 opacity-70 text-primary" />
-            <span>{readTime}</span>
-          </div>
+          
+          {liveUrl && (
+            <Button 
+              size="sm" 
+              variant="outline"
+              asChild
+              className="gap-1.5"
+            >
+              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+                <BookOpen className="h-4 w-4" />
+                Read
+              </a>
+            </Button>
+          )}
         </div>
       </div>
     </motion.article>
