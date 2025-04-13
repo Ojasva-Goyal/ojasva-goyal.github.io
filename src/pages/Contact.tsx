@@ -130,7 +130,7 @@ const Contact = () => {
                     </a>
                     
                     <a
-                      href="https://twitter.com"
+                      href="https://x.com/goyal_ojasva/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-10 w-10 rounded-full bg-secondary hover:bg-primary/10 flex items-center justify-center transition-colors"
