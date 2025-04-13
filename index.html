@@ -16,7 +16,7 @@
     <meta name="twitter:card" content="Ojasva's Portfolio" />
     <meta name="twitter:site" content="@goyal_ojasva" />
     <meta name="twitter:image" content="https://raw.githubusercontent.com/Ojasva-Goyal/ojasva-goyal.github.io/main/website_cover.jpg" />
-    <script type="module" crossorigin src="/assets/index.DBurReEZ.js"></script>
+    <script type="module" crossorigin src="/assets/index.D8dh2Ctd.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index.D37bcBnF.css">
   </head>
 
@@ -24,5 +24,45 @@
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ojasva Goyal",
+      "url": "https://ojasva-goyal.github.io",
+      "sameAs": [
+        "https://linkedin.com/in/ojasva-goyal",
+        "https://github.com/ojasva-goyal"
+      ],
+      "jobTitle": "Senior Undergraduate Student",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "BITS Pilani"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pilani",
+        "addressRegion": "Rajasthan",
+        "postalCode": "333031",
+        "addressCountry": "India"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Deloitte USI"
+      },
+      "description": "Portfolio website of Ojasva Goyal showcasing skills, projects, and experience in data science, machine learning and drones."
+    }
+    </script>
+    <script>
+      fetch('/keywords.json')
+        .then(response => response.json())
+        .then(data => {
+          const keywordsMeta = document.createElement('meta');
+          keywordsMeta.name = 'keywords';
+          keywordsMeta.content = data.keywords.join(', ');
+          document.head.appendChild(keywordsMeta);
+        })
+        .catch(error => console.error('Error loading keywords:', error));
+    </script>
   </body>
 </html>
