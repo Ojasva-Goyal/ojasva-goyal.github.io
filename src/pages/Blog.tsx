@@ -114,6 +114,7 @@ const Blog = () => {
                 tags={post.tags}
                 slug={post.slug}
                 index={index}
+                liveUrl={post.liveUrl}
               />
             ))}
           </motion.div>
