@@ -1,3 +1,95 @@
+export const experiences = [
+  {
+    id: 1,
+    title: "Undergraduate Researcher (Disruptive Technologies - AI/ML Lab)",
+    company: "BITS Pilani, Pilani Campus",
+    date: "Jan 2025 – Present",
+    description:
+      "Researching multimodal learning techniques for Visual Question Answering (VQA) systems applied to advertisement analysis. Exploring transformer-based models to enhance interpretability and accuracy in ad-based VQA tasks.",
+    type: "Part-time",
+    skills: ["Multimodal Learning", "Transformers", "VQA", "Deep Learning"]
+  },
+  {
+    id: 2,
+    title: "Business Data Analyst",
+    company: "Vaaree",
+    date: "July 2024 – Dec 2024",
+    description:
+      "Built a TFT-based sales forecasting model to improve sales and inventory planning. Developed portfolio health dashboards using SQL, Metabase, and Tableau. Conducted RCA for underperforming SKUs, improving profitability by 15% in specific categories.",
+    type: "Internship",
+    skills: ["Temporal Fusion Transformer", "Tableau", "SQL", "Metabase", "Sales Forecasting"]
+  },
+  {
+    id: 3,
+    title: "Summer Research Intern",
+    company: "Ministry of Education, Govt. of India (CoE: AI for Agriculture)",
+    date: "May 2024 – July 2024",
+    description:
+      "Researched panoptic farm segmentation using satellite image time series for Indian districts. Results contributed to further government funding for scalable deployment.",
+    type: "Internship",
+    skills: ["Remote Sensing", "Time Series Analysis", "Segmentation", "Panoptic Models"]
+  },
+  {
+    id: 4,
+    title: "BIM Researcher and Consultant",
+    company: "University of Auckland",
+    date: "July 2023 – Aug 2023",
+    description:
+      "Worked with Hynds Pipe Systems Ltd to analyze New Zealand’s BIM landscape. Provided data-driven recommendations for BIM integration.",
+    type: "Internship",
+    skills: ["BIM", "Market Research", "Consulting"]
+  },
+  {
+    id: 5,
+    title: "Summer Robotics Intern",
+    company: "P.N.T. Robotics & Automation Solutions LLP",
+    date: "May 2023 – July 2023",
+    description:
+      "Researched MAV navigation in GPS-denied environments. Simulated robotic arms using MoveIT and improved localization with ArUco markers.",
+    type: "Internship",
+    skills: ["SLAM", "MoveIT", "ArUco Markers", "ROS"]
+  }
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Visual Question Answering for Agricultural Diagnostics",
+    description:
+      "Developed a deep learning + VQA system for wheat rust detection achieving 97.69% accuracy. Published in Scientific Reports. Implemented federated learning for mobile and drone deployment.",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000&auto=format&fit=crop",
+    tags: ["VQA", "Federated Learning", "Deep Learning", "ResNet", "Agritech"],
+    githubUrl: "https://github.com/Ojasva-Goyal",
+    liveUrl: "https://doi.org/10.1038/s41598-024-79793-2"
+  },
+  {
+    id: 2,
+    title: "CycleGAN-Based Image Dehazing",
+    description:
+      "Implemented a CycleGAN from scratch to improve image clarity in hazy conditions. Enhanced performance with data augmentation techniques.",
+    image: "https://images.unsplash.com/photo-1543039717-b4d407503ac6?q=80&w=1000&auto=format&fit=crop",
+    tags: ["CycleGAN", "Image Processing", "Deep Learning"],
+    githubUrl: "https://github.com/Ojasva-Goyal/CycleGAN-based-Image-Dehazing"
+  },
+  {
+    id: 3,
+    title: "CNN-Based Sound Classification for Multi-Class Recognition",
+    description:
+      "Built a 6-layer CNN model to classify 13 sound classes using Mel spectrograms. Tested multiple architectures like EfficientNet, ResNet, and MobileNetV2.",
+    image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1000&auto=format&fit=crop",
+    tags: ["CNN", "Audio Classification", "Librosa", "Sound Recognition"],
+    githubUrl: "https://github.com/Ojasva-Goyal/CNN-Based-Sound-Classification-for-Multi-Class-Recognition"
+  },
+  {
+    id: 4,
+    title: "Object Tracking UAV for Indoor Surveillance",
+    description:
+      "Led development of AI-based tracking system for UAVs in indoor environments. Secured INR 50,000 funding from BITS Pilani.",
+    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1000&auto=format&fit=crop",
+    tags: ["Drone AI", "Object Tracking", "Swarm Systems", "Indoor Navigation"],
+    githubUrl: "https://docs.google.com/presentation/d/1oZg8C2DB7iLsiBUHgs5iLaVPEl1W15QWWSvR1uvbrQk/edit?usp=sharing"
+  }
+];
 
 export const blogPosts = [
   {
@@ -9,229 +101,174 @@ export const blogPosts = [
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
     tags: ["Jetson", "Edge AI", "Deep Learning"],
     slug: "choosing-nvidia-jetson",
-    liveUrl: "https://medium.com/@ojasvagoyal9/choosing-the-right-nvidia-jetson-board-a-researchers-perspective-fc5afa9046d3"
+    liveUrl: "https://medium.com/p/fc5afa9046d3"
   }
 ];
 
 export const skills = [
   {
     category: "Programming Languages",
-    items: ["Python", "JavaScript", "TypeScript", "C++", "MATLAB"]
+    items: ["Python", "C++", "JavaScript", "MATLAB", "R"]
   },
   {
-    category: "Machine Learning",
-    items: ["TensorFlow", "PyTorch", "Keras", "Scikit-Learn", "Computer Vision", "NLP"]
+    category: "Machine Learning & AI",
+    items: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "Computer Vision", "NLP", "Reinforcement Learning"]
   },
   {
-    category: "Drone Technology",
-    items: ["ROS", "Flight Control Systems", "Sensor Integration", "Autonomous Navigation"]
+    category: "Data Science & Analysis",
+    items: ["Pandas", "NumPy", "Data Visualization", "Statistical Analysis", "Jupyter", "SQL"]
   },
   {
-    category: "Data Science",
-    items: ["Data Analysis", "Statistical Modeling", "Data Visualization", "Big Data Processing"]
+    category: "Robotics & Drones",
+    items: ["Drone Programming", "ROS (Robot Operating System)", "Sensor Fusion", "SLAM", "Path Planning", "Control Systems"]
   },
   {
-    category: "Web Development",
-    items: ["React", "Node.js", "HTML/CSS", "RESTful APIs", "Database Design"]
-  },
-  {
-    category: "Tools & Platforms",
-    items: ["Git", "Docker", "AWS", "Linux", "Jupyter", "CUDA"]
+    category: "Tools & Technologies",
+    items: ["Git", "Docker", "AWS", "Linux", "Raspberry Pi", "Arduino", "Flight Controllers"]
   }
 ];
 
 export const education = [
   {
-    degree: "B.E. in Civil Engineering & Minor in Data Science",
-    institution: "BITS Pilani, Pilani Campus",
-    date: "2020 - 2024",
-    description: "Pursuing a dual degree program with emphasis on computational methods, artificial intelligence, and data-driven approaches to engineering problems.",
+    degree: "Bachelor of Engineering in Civil + Minor in Data Science",
+    institution: "Birla Institute of Technology & Science, Pilani, Pilani Campus",
+    date: "2021 - 2025",
+    description: "Specializing in Artificial Intelligence and Robotics with a focus on autonomous systems.",
     achievements: [
-      "Maintained a 9.1/10 CGPA consistently throughout the program",
-      "Selected for the competitive Minor in Data Science program",
-      "Recipient of the Merit Scholarship for academic excellence",
-      "Completed specialized coursework in Machine Learning, Computer Vision, and Autonomous Systems"
-    ]
-  },
-  {
-    degree: "Deep Learning Specialization",
-    institution: "Coursera (DeepLearning.AI)",
-    date: "2022",
-    description: "Completed the five-course specialization covering deep learning foundations, neural networks, structuring machine learning projects, and sequence models.",
-    achievements: [
-      "Implemented and trained neural networks using TensorFlow and Keras",
-      "Built and trained CNN models for visual recognition tasks",
-      "Developed RNN and LSTM models for sequence prediction problems",
-      "Completed all programming assignments with distinction"
+      "GPA: 7.63/10.0",
+      "Innovator of the Year, 2024-2025",
+      "Capstone Project: Autonomous Drone Swarm for Search and Rescue Operations",
+      "Research Assistant at the AI & Robotics Lab"
     ]
   }
+  // {
+  //   degree: "Machine Learning Specialization",
+  //   institution: "Coursera (Stanford University)",
+  //   date: "2022",
+  //   description: "Comprehensive online specialization covering machine learning algorithms and applications.",
+  //   achievements: [
+  //     "Completed with Distinction",
+  //     "Implemented various ML projects including neural networks from scratch"
+  //   ]
+  // },
+  // {
+  //   degree: "Drone Programming Certification",
+  //   institution: "Udacity",
+  //   date: "2021",
+  //   description: "Specialized course in drone programming, control systems, and autonomous navigation.",
+  //   achievements: [
+  //     "Developed a custom autopilot system for a quadrotor",
+  //     "Built a visual navigation system using computer vision"
+  //   ]
+  // }
 ];
 
 export const honors = [
   {
     id: 1,
-    title: "Nucleus: The Tech Show (Winner)",
-    organization: "BITS Pilani & Industry Partners",
-    date: "March 2024",
-    description: "Won first place in the startup category for developing an AI-powered drone solution for disaster management and emergency response."
+    title: "1st Place at ASCE CISSC-2025",
+    organization: "ASCE CISSC International Conference",
+    date: "Feb 2025",
+    description: "Presented an AI-powered UAV crop disease diagnostic system integrating deep learning, Federated Learning, and Agentic AI."
   },
   {
     id: 2,
-    title: "Research Publication in Aerial Computer Vision",
-    organization: "International Journal of Computer Vision and Applications",
-    date: "January 2024",
-    description: "Co-authored a paper on novel deep learning techniques for real-time aerial object detection and tracking with limited computational resources."
+    title: "Innovator of the Year",
+    organization: "BITSAA Mantra Leadership Awards",
+    date: "Feb 2025",
+    description: "Recognized for impactful innovation at the intersection of AI and sustainability."
   },
   {
     id: 3,
-    title: "BITS Pilani Innovation Challenge",
-    organization: "Centre for Innovation, Incubation & Entrepreneurship",
-    date: "November 2023",
-    description: "Secured second place for developing a drone-based solution for automated crop monitoring and precision agriculture using computer vision."
+    title: "Top 20 in Hackathon 7.0",
+    organization: "Cisco ThingQbator",
+    date: "Dec 2024",
+    description: "Shortlisted in top 20 out of 1000+ teams for innovative AI solutions."
   },
   {
     id: 4,
-    title: "APOGEE Technical Festival Best Project",
-    organization: "BITS Pilani",
-    date: "March 2023",
-    description: "Awarded best technical project for developing an autonomous drone system capable of navigating GPS-denied environments using only visual cues."
+    title: "Amazon ML Challenge – Rank 166/75,000",
+    organization: "Amazon",
+    date: "Sep 2024",
+    description: "Ranked in top 0.2% participants nationally."
   },
   {
     id: 5,
-    title: "Dean's List Honoree",
-    organization: "BITS Pilani",
-    date: "2021 - 2024",
-    description: "Recognized consistently for academic excellence by being included in the Dean's List for six consecutive semesters."
-  }
-];
-
-export const experiences = [
-  {
-    id: 1,
-    title: "Machine Learning Research Intern",
-    company: "Hybrid Technology Solutions",
-    date: "Jan 2024 - Present",
-    type: "Internship",
-    description: "Working on developing deep learning algorithms for drone-based object detection and tracking systems for surveillance and monitoring applications.",
-    skills: ["PyTorch", "Computer Vision", "YOLO", "ROS", "Tensorflow"]
+    title: "Winner – Nucleus: The Tech Show",
+    organization: "BITS-TEC of DST, GOI",
+    date: "Feb 2024",
+    description: "Won 1st place and cash prize of INR 10,000."
   },
   {
-    id: 2,
-    title: "Data Science Intern",
-    company: "DataInsights Inc.",
-    date: "May 2023 - Aug 2023",
-    type: "Internship",
-    description: "Designed and implemented machine learning models for predictive analytics in the agricultural sector, focusing on crop yield prediction and resource optimization.",
-    skills: ["Python", "Scikit-Learn", "Data Analysis", "Time Series Modeling", "Feature Engineering"]
-  },
-  {
-    id: 3,
-    title: "Undergraduate Researcher",
-    company: "BITS Pilani AI Lab",
-    date: "Aug 2022 - Apr 2023",
-    type: "Research",
-    description: "Contributed to research on reinforcement learning algorithms for autonomous drone navigation in complex and dynamic environments.",
-    skills: ["Deep Reinforcement Learning", "Simulation", "Python", "TensorFlow", "UAV Systems"]
-  },
-  {
-    id: 4,
-    title: "Technical Lead",
-    company: "Drone Enthusiasts Club",
-    date: "Sep 2021 - May 2023",
-    type: "Leadership",
-    description: "Led a team of 15 students in designing and building custom drones for various applications, including aerial photography, mapping, and autonomous navigation challenges.",
-    skills: ["Project Management", "Drone Hardware", "Flight Controllers", "Team Leadership", "CAD Design"]
+    id: 6,
+    title: "Microsoft for Startups – Founders Hub Selection",
+    organization: "Microsoft/Nasscom ThingQbator",
+    date: "Jul 2024",
+    description: "Selected for prototyping stage for startup 'ePlast'."
   }
 ];
 
 export const news = [
   {
     id: 1,
-    title: "Publication Accepted in Top Computer Vision Conference",
-    date: "April 5, 2025",
-    source: "Research Announcement",
-    description: "My paper on 'Efficient Real-time Object Detection for Resource-Constrained Aerial Platforms' has been accepted for presentation at CVPR 2025.",
-    link: "https://example.com/publication"
+    title: "1st Place Win @ AISC CISSC-25",
+    date: "Feb 09, 2025",
+    source: "University News",
+    description: "My work on “AI-Powered UAV Crop Disease Diagnostics for Smart Cities of Tomorrow” got 1st pace at the conference",
+    link: "https://www.bits-pilani.ac.in/news/triumph-in-innovation-bits-pilani-shines-at-asce-cissc-2025/"
   },
   {
     id: 2,
-    title: "Startup Venture Selected for Incubation Program",
-    date: "March 18, 2025",
-    source: "University Press",
-    description: "Our drone technology startup has been selected for the prestigious BITS Pilani Incubation Program with seed funding of $25,000.",
-    link: "https://example.com/incubation-news"
-  },
-  {
-    id: 3,
-    title: "Winner of the National Drone Innovation Challenge",
-    date: "February 10, 2025",
-    source: "Tech News Daily",
-    description: "Led a team of four to victory in the National Drone Innovation Challenge with our novel approach to autonomous navigation in GPS-denied environments.",
-    link: "https://example.com/drone-challenge"
-  },
-  {
-    id: 4,
-    title: "Featured in 'Emerging Researchers in AI' Series",
-    date: "January 22, 2025",
-    source: "AI Spotlight Magazine",
-    description: "Selected as one of the top 30 emerging researchers in artificial intelligence and robotics to watch in 2025.",
-    link: "https://example.com/ai-spotlight"
+    title: "Featured in BITS Institute-wide Newsletter, Bitsology",
+    date: "February, 2025",
+    source: "Tech Innovators Magazine",
+    description: "Featured for our recent award at ASCE Conference",
+    link: "https://www.bits-pilani.ac.in/BITSology/"
   }
+  // {
+  //   id: 3,
+  //   title: "Research Grant Awarded for Drone AI Project",
+  //   date: "January 20, 2023",
+  //   source: "Research Foundation",
+  //   description: "Received $50,000 grant to continue research on energy-efficient path planning for autonomous drones.",
+  //   link: "https://example.com/news3"
+  // },
+  // {
+  //   id: 4,
+  //   title: "Paper Accepted in Top-Tier AI Journal",
+  //   date: "November 10, 2022",
+  //   source: "Journal of Artificial Intelligence",
+  //   description: "Research paper on vision-based navigation techniques for drones accepted for publication in a prestigious journal.",
+  //   link: "https://example.com/news4"
+  // }
 ];
 
-export const projects = [
-  {
-    id: 1,
-    title: "AutonomousDrone",
-    description: "An autonomous drone system using deep learning for navigation in GPS-denied environments, capable of obstacle avoidance and path planning.",
-    image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=2070&auto=format&fit=crop",
-    tags: ["Deep Learning", "Computer Vision", "Robotics"],
-    githubUrl: "https://github.com/Ojasva-Goyal/AutonomousDrone",
-    liveUrl: ""
-  },
-  {
-    id: 2,
-    title: "Aerial Object Tracking",
-    description: "A real-time object detection and tracking system optimized for aerial imagery with limited computational resources.",
-    image: "https://images.unsplash.com/photo-1506947411487-a56738267384?q=80&w=2070&auto=format&fit=crop",
-    tags: ["Computer Vision", "YOLO", "Object Tracking"],
-    githubUrl: "https://github.com/Ojasva-Goyal/AerialObjectTracking",
-    liveUrl: ""
-  },
-  {
-    id: 3,
-    title: "Drone Fleet Management",
-    description: "A centralized system for managing multiple drones in coordinated missions using swarm intelligence and distributed computing.",
-    image: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?q=80&w=2080&auto=format&fit=crop",
-    tags: ["Distributed Systems", "Swarm Intelligence", "IoT"],
-    githubUrl: "https://github.com/Ojasva-Goyal/DroneFleet",
-    liveUrl: ""
-  },
-  {
-    id: 4,
-    title: "Crop Monitoring System",
-    description: "A machine learning pipeline for analyzing drone-captured imagery to assess crop health, detect diseases, and optimize resource allocation.",
-    image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=2070&auto=format&fit=crop",
-    tags: ["Machine Learning", "Agriculture", "Image Processing"],
-    githubUrl: "https://github.com/Ojasva-Goyal/CropMonitoring",
-    liveUrl: ""
-  },
-  {
-    id: 5,
-    title: "Reinforcement Learning for UAVs",
-    description: "Implementation of various reinforcement learning algorithms for training autonomous navigation policies in unmanned aerial vehicles.",
-    image: "https://images.unsplash.com/photo-1508614999368-9260051292e5?q=80&w=2070&auto=format&fit=crop",
-    tags: ["Reinforcement Learning", "Simulation", "UAV"],
-    githubUrl: "https://github.com/Ojasva-Goyal/RL-UAV",
-    liveUrl: ""
-  },
-  {
-    id: 6,
-    title: "Drone Delivery Optimization",
-    description: "An algorithm for optimizing delivery routes for drone-based package delivery systems considering battery constraints, weather conditions, and obstacles.",
-    image: "https://images.unsplash.com/photo-1501621667575-af81f1f0bacc?q=80&w=2070&auto=format&fit=crop",
-    tags: ["Optimization", "Route Planning", "Logistics"],
-    githubUrl: "https://github.com/Ojasva-Goyal/DroneDelivery",
-    liveUrl: ""
-  }
-];
+// Update projects to include publication links
+// export const researchProjects = [
+//   {
+//     id: 1,
+//     title: "Deep Learning for Drone Obstacle Avoidance",
+//     description: "Novel neural network architecture for real-time obstacle detection and avoidance in dynamic environments.",
+//     image: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?q=80&w=1000&auto=format&fit=crop",
+//     tags: ["Deep Learning", "Computer Vision", "Robotics", "CNN"],
+//     publicationUrl: "https://example.com/publication1",
+//     githubUrl: "https://github.com"
+//   },
+//   {
+//     id: 2,
+//     title: "Multi-Agent Reinforcement Learning for Drone Swarms",
+//     description: "Coordination algorithms enabling drone swarms to collaboratively perform complex tasks with minimal communication.",
+//     image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1000&auto=format&fit=crop",
+//     tags: ["Reinforcement Learning", "Multi-agent Systems", "Swarm Intelligence"],
+//     publicationUrl: "https://example.com/publication2",
+//     githubUrl: "https://github.com"
+//   },
+//   {
+//     id: 3,
+//     title: "Energy-Optimized Path Planning for Drones",
+//     description: "Mathematical models and algorithms for energy-aware flight path planning in varying weather conditions.",
+//     image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1000&auto=format&fit=crop",
+//     tags: ["Path Planning", "Energy Optimization", "Algorithms"],
+//     publicationUrl: "https://example.com/publication3"
+//   }
+// ];
