@@ -32,6 +32,6 @@ export default defineConfig(({ mode }) => ({
     emptyOutDir: true,
   },
   esbuild: {
-    jsxInject: `import React from 'react'`,
+    // jsxInject: `import React from 'react'`,
   },
 }));
