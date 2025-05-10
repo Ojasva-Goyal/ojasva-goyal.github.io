@@ -101,7 +101,7 @@ export const blogPosts = [
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
     tags: ["Jetson", "Edge AI", "Deep Learning"],
     slug: "choosing-nvidia-jetson",
-    liveUrl: "https://medium.com/p/fc5afa9046d3"
+    liveUrl: "https://medium.com/p/5b08e25dae18"
   }
 ];
 
