@@ -96,12 +96,23 @@ export const blogPosts = [
     id: 1,
     title: "Choosing the Right NVIDIA Jetson Board: A Researcher's Perspective",
     excerpt: "Insights into how to pick the perfect NVIDIA Jetson board for AI research on edge devices.",
-    date: "March 25, 2025",
-    readTime: "7 min read",
+    date: "May 10, 2025",
+    readTime: "8 min read",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
-    tags: ["Jetson", "Edge AI", "Deep Learning"],
+    tags: ["Deep Learning", "Generative Ai", "Ai Hardware", "Edge Computing", "Nvidia Jetson", "Robotics"],
     slug: "choosing-nvidia-jetson",
     liveUrl: "https://medium.com/p/5b08e25dae18"
+  },
+  {
+    id: 1,
+    title: "Fine-Tuning DeepSeek-VL2 for Multimodal Instruction Following: A Comprehensive Technical Guide",
+    excerpt: "Fine-tuning large-scale vision-language models with detailed error breakdowns and best practices.",
+    date: "May 21, 2025",
+    readTime: "6 min read",
+    image: "https://plus.unsplash.com/premium_photo-1745610508165-de54e709a30e?q=80&w=1974&auto=format&fit=crop",
+    tags: ["Deepseek", "Vision Language Model", "Fine Tuning", "Deepseek Vl2", "Debugging"],
+    slug: "finetune-deepseek-vl2",
+    liveUrl: "https://medium.com/towards-artificial-intelligence/fine-tuning-deepseek-vl2-for-multimodal-instruction-following-a-step-by-step-guide-13238ad704ac"
   }
 ];
 
