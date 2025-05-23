@@ -42,6 +42,31 @@ const NotFound = () => {
           </motion.div>
         </div>
       </main>
+
+      <footer className="py-12 px-4 md:px-8 border-t">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-6 md:mb-0">
+              <p className="font-mono text-sm">&copy; {new Date().getFullYear()} Ojasva Goyal. All rights reserved.</p>
+            </div>
+            
+            <div className="flex space-x-6">
+              <a href="https://github.com/Ojasva-Goyal" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                GitHub
+              </a>
+              <a href="https://linkedin.com/in/ojasva-goyal-476422230/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                LinkedIn
+              </a>
+              <a href="https://medium.com/@ojasvagoyal9" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                Medium
+              </a>
+              <a href="https://x.com/goyal_ojasva/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                Twitter
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
