@@ -59,6 +59,27 @@ const Hero = () => {
                 </Button>
                 
                 <Button size="icon" variant="ghost" className="rounded-full" asChild>
+                  <a href="https://medium.com/@ojasvagoyal9" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      height="20"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-5 w-5"
+                    >
+                      <path d="M4 3h16a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1z"></path>
+                      <path d="M8 9l4 4 4-4"></path>
+                      <path d="M8 15h8"></path>
+                    </svg>
+                  </a>
+                </Button>
+                
+                <Button size="icon" variant="ghost" className="rounded-full" asChild>
                   <a href="mailto:ojasvagoyal9@gmail.com" aria-label="Email">
                     <Mail className="h-5 w-5" />
                   </a>
