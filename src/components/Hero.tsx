@@ -62,9 +62,9 @@ const Hero = () => {
                   <a href="https://medium.com/@ojasvagoyal9" target="_blank" rel="noopener noreferrer" aria-label="Medium">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
                       viewBox="0 0 24 24"
-                      width="20"
-                      height="20"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="2"
@@ -72,9 +72,9 @@ const Hero = () => {
                       strokeLinejoin="round"
                       className="h-5 w-5"
                     >
-                      <path d="M4 3h16a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1z"></path>
-                      <path d="M8 9l4 4 4-4"></path>
-                      <path d="M8 15h8"></path>
+                      <path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
+                      <path d="M8 9h1l3 3 3-3h1" />
+                      <path d="M8 15h8" />
                     </svg>
                   </a>
                 </Button>
