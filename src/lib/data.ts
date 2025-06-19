@@ -246,7 +246,15 @@ export const news = [
     date: "February, 2025",
     source: "Tech Innovators Magazine",
     description: "Featured for our recent award at ASCE Conference",
-    link: "https://www.bits-pilani.ac.in/BITSology/"
+    link: "https://www.bits-pilani.ac.in/BITSology/BITSology-Vol-1.2/"
+  },
+  {
+    id: 2,
+    title: "Featured in Pilani Campus- Fall Semester Magazine, BITSCAN (Issue_44)",
+    date: "December, 2024",
+    source: "Tech Innovators Magazine",
+    description: "Featured for my research work and achivements in the fall semester of 2023-2024.",
+    link: "https://www.bits-pilani.ac.in/wp-content/uploads/BITSCAN-Issue_44_II-Sem-2023-24.pdf/"
   }
   // {
   //   id: 3,
