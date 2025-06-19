@@ -113,6 +113,17 @@ export const blogPosts = [
     tags: ["Deepseek", "Vision Language Model", "Fine Tuning", "Deepseek Vl2", "Debugging"],
     slug: "finetune-deepseek-vl2",
     liveUrl: "https://medium.com/towards-artificial-intelligence/fine-tuning-deepseek-vl2-for-multimodal-instruction-following-a-step-by-step-guide-13238ad704ac"
+  },
+  {
+    id: 1,
+    title: "Demystifying Pixtral Fine-Tuning: Instruction Tasks with Multimodal Prompts",
+    excerpt: "How I fine-tuned Pixtral‑12B with LoRA for custom image-text tasks on a single GPU ?",
+    date: "May 24, 2025",
+    readTime: "5 min read",
+  image: "https://plus.unsplash.com/premium_photo-1682124651258-410b25fa9dc0?q=80&w=1321&auto=format&fit=crop",
+    tags: ["Pixtral", "Vision Language Model", "Fine Tuning", "Mistral", "Multimodal AI"],
+    slug: "finetune-pixtral-12b",
+    liveUrl: "https://medium.com/generative-ai/demystifying-pixtral-fine-tuning-instruction-tasks-with-multimodal-prompts-7cf80be1c4f4"
   }
 ];
 
@@ -144,12 +155,13 @@ export const education = [
     degree: "Bachelor of Engineering in Civil + Minor in Data Science",
     institution: "Birla Institute of Technology & Science, Pilani, Pilani Campus",
     date: "2021 - 2025",
-    description: "Specializing in Artificial Intelligence and Robotics with a focus on autonomous systems.",
+    description: " ",
     achievements: [
-      "GPA: 7.63/10.0",
+      "GPA: 7.79/10.0",
       "Innovator of the Year, 2024-2025",
-      "Capstone Project: Autonomous Drone Swarm for Search and Rescue Operations",
-      "Research Assistant at the AI & Robotics Lab"
+      // "Capstone Project: Autonomous Drone Swarm for Search and Rescue Operations",
+      "Vice-Captain @ Team Robocon",
+      "Drone Tech Coordinator @ Kalipatnapu AR/VR Lab"
     ]
   }
   // {
