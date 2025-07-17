@@ -6,7 +6,7 @@ export const experiences = [
     date: "Jan 2025 – Present",
     description:
       "Researching multimodal learning techniques for Visual Question Answering (VQA) systems applied to advertisement analysis. Exploring transformer-based models to enhance interpretability and accuracy in ad-based VQA tasks.",
-    type: "Part-time",
+    type: "Study Oriented Project",
     skills: ["Multimodal Learning", "Transformers", "VQA", "Deep Learning"]
   },
   {
@@ -169,10 +169,11 @@ export const education = [
     description: " ",
     achievements: [
       "GPA: 7.79/10.0",
+      "Dr. APJ Abdul Kalam Young Research Fellow",
       "Innovator of the Year, 2024-2025",
       // "Capstone Project: Autonomous Drone Swarm for Search and Rescue Operations",
       "Vice-Captain @ Team Robocon",
-      "Drone Tech Coordinator @ Kalipatnapu AR/VR Lab"
+      // "Drone Tech Coordinator @ Kalipatnapu AR/VR Lab"
     ]
   }
   // {
@@ -258,6 +259,14 @@ export const news = [
     source: "",
     description: "Selected as a recipient of the prestigious Dr. APJ Abdul Kalam Young Research Fellowship in recognition of outstanding research potential and societal impact. This honor supports my ongoing work in AI for social good.",
     link: "https://www.drkalamfellowship.com/winners-2024-2025.php"
+  },
+  {
+    id: 1,
+    title: "🌟 Celebrating the Achievements of Ojasva Goyal! 🌟",
+    date: "Feb 24, 2025",
+    source: "University News",
+    description: "Got appreciation and acknowledgement for my accomplishments in research, innovation, and competitive excellence",
+    link: "https://www.bits-pilani.ac.in/news/celebrating-the-achievements-of-ojasva-goyal/"
   },
   {
     id: 1,
