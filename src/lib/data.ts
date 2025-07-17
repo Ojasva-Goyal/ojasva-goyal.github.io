@@ -124,13 +124,24 @@ export const blogPosts = [
     tags: ["Pixtral", "Vision Language Model", "Fine Tuning", "Mistral", "Multimodal AI"],
     slug: "finetune-pixtral-12b",
     liveUrl: "https://medium.com/generative-ai/demystifying-pixtral-fine-tuning-instruction-tasks-with-multimodal-prompts-7cf80be1c4f4"
+  },
+  {
+    id: 1,
+    title: "CUDA vs cuDNN: The Dynamic Duo That Powers Your AI Dreams",
+    excerpt: "Ever wondered what’s happening behind the scenes when your fancy AI model churns through millions of calculations in seconds?",
+    date: "July 09, 2025",
+    readTime: "9 min read",
+  image: "https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?q=80&w=1170&auto=format&fit=crop",
+    tags: ["Cuda", "Cudnn", "Gpu Computing", "Deep Learning", "Parallel Programming"],
+    slug: "cuda vs cdDNN",
+    liveUrl: "https://medium.com/towards-artificial-intelligence/cuda-vs-cudnn-the-dynamic-duo-that-powers-your-ai-dreams-96f3b3f2710e"
   }
 ];
 
 export const skills = [
   {
     category: "Programming Languages",
-    items: ["Python", "C++", "JavaScript", "MATLAB", "R"]
+    items: ["Python", "C", "JavaScript", "MATLAB", "R"]
   },
   {
     category: "Machine Learning & AI",
@@ -232,6 +243,22 @@ export const honors = [
 ];
 
 export const news = [
+  {
+    id: 1,
+    title: "Special Mention in Director's Report, BITS Pilani @ Convocation' 25",
+    date: "July 13, 2025",
+    source: "",
+    description: "Featured in the Director's Annual Report of Pilani Campus for being awarded the Dr. Kalam Fellowship. Grateful to see my work recognized at the institute level.",
+    link: "https://www.youtube.com/watch?v=UB2HZpviZo8&t=3932s"
+  },
+  {
+    id: 1,
+    title: "Awarded Dr. APJ Abdul Kalam Young Research Fellowship",
+    date: "May 23, 2025",
+    source: "",
+    description: "Selected as a recipient of the prestigious Dr. APJ Abdul Kalam Young Research Fellowship in recognition of outstanding research potential and societal impact. This honor supports my ongoing work in AI for social good.",
+    link: "https://www.drkalamfellowship.com/winners-2024-2025.php"
+  },
   {
     id: 1,
     title: "1st Place Win @ AISC CISSC-25",
