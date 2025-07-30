@@ -63,7 +63,11 @@ const BlogPost = ({
         </div>
         
         <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors terminal-text">
-          <Link to={`/blog/${slug}`}>{title}</Link>
+          {liveUrl ? (
+            <a href={liveUrl} target="_blank" rel="noopener noreferrer">{title}</a>
+          ) : (
+            <span>{title}</span>
+          )}
         </h3>
         
         <p className="text-muted-foreground mb-4 line-clamp-2 font-mono text-sm">{excerpt}</p>

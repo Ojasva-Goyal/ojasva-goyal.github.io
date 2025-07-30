@@ -8,10 +8,15 @@ import BlogPost from '@/components/BlogPost';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeTag, setActiveTag] = useState('all');
+  const [email, setEmail] = useState('');
+  const [isSubscribing, setIsSubscribing] = useState(false);
+  const { toast } = useToast();
   
   // Extract unique tags
   const allTags = [...new Set(blogPosts.flatMap(post => post.tags))];
@@ -29,6 +34,52 @@ const Blog = () => {
   
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
+  };
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!email) {
+      toast({
+        title: "Error",
+        description: "Please enter your email address",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubscribing(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('subscribe-newsletter', {
+        body: { email }
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Success!",
+        description: data.message || "Successfully subscribed to newsletter",
+      });
+
+      // Clear email input
+      setEmail('');
+      
+      // Redirect to Medium profile
+      setTimeout(() => {
+        window.open('https://medium.com/@ojasvagoyal9', '_blank');
+      }, 1000);
+
+    } catch (error: any) {
+      console.error('Subscription error:', error);
+      toast({
+        title: "Error",
+        description: error.message || "Failed to subscribe. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubscribing(false);
+    }
   };
   
   return (
@@ -163,14 +214,19 @@ const Blog = () => {
                 Stay updated with my latest articles, projects, and insights on AI, drone technology, and data science.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                 <Input 
                   type="email" 
                   placeholder="Your email address" 
                   className="flex-grow"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  disabled={isSubscribing}
                 />
-                <Button>Subscribe</Button>
-              </div>
+                <Button type="submit" disabled={isSubscribing}>
+                  {isSubscribing ? "Subscribing..." : "Subscribe"}
+                </Button>
+              </form>
               
               <p className="text-xs text-muted-foreground mt-4">
                 I respect your privacy. Unsubscribe at any time.
