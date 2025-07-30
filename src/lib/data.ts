@@ -84,10 +84,19 @@ export const projects = [
     id: 4,
     title: "Object Tracking UAV for Indoor Surveillance",
     description:
-      "Led development of AI-based tracking system for UAVs in indoor environments. Secured INR 50,000 funding from BITS Pilani.",
+      "This project under supervision of Dr. G S S Chalapathi aims to develop an object detection and tracking system for a pair of unmanned aerial vehicles (drones) for video surveillance in indoor environments like office buildings, malls, etc. Secured INR 50,000 funding from AUGSD, BITS Pilani for the project.",
     image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1000&auto=format&fit=crop",
     tags: ["Drone AI", "Object Tracking", "Swarm Systems", "Indoor Navigation"],
     githubUrl: "https://docs.google.com/presentation/d/1oZg8C2DB7iLsiBUHgs5iLaVPEl1W15QWWSvR1uvbrQk/edit?usp=sharing"
+  },
+  {
+    id: 5,
+    title: "Statistical Analysis and Forecasting of Solar Energy for Study Regions in Rajasthan",
+    description:
+      "Conducted comprehensive statistical analysis and forecasting of solar energy potential in various regions of Rajasthan. Implemented models such as AR, MA, ARMA, ARIMA, and SARIMA.",
+    image: "https://images.unsplash.com/photo-1502637098811-fa9526d2b659?q=80&w=1332&auto=format&fit=crop",
+    tags: ["Solar Energy", "Statistical Analysis", "Forecasting"],
+    liveUrl: "https://docs.google.com/document/d/1fXjYCbrng3dUyELXN2Y-Wu6hyNXdZ5HmqB6ZuA7cLU0/edit?usp=sharing"
   }
 ];
 
@@ -175,17 +184,19 @@ export const education = [
       "Vice-Captain @ Team Robocon",
       // "Drone Tech Coordinator @ Kalipatnapu AR/VR Lab"
     ]
+  },
+  {
+    degree: "Environmental Sustainability Ventures",
+    institution: "The Sustainability Mafia & BITS Pilani",
+    date: "Jan 2024 - Jul 2024",
+    description: "Specialized Elective Course (HSS F381) @ BITS on sustainable business practices and building climate-tech ventures.",
+    achievements: [
+      "Founded ePlast, a plastic recycling startup, as part of course this course, gaining hands-on experience in venture creation.",
+      "Got selected for Microsoft for Startup's Founders Hub, enabling prototyping stage for ePlast.",
+      "Got selected for Nasscom Foundation and Cisco's thingQbator's Prototyping Stage (top 55 teams out of 1700+ applicants).",
+      "Engaged with industry leaders and VCs, and developed skills in building financial and business models, product roadmaps, and the product itself."
+    ]
   }
-  // {
-  //   degree: "Machine Learning Specialization",
-  //   institution: "Coursera (Stanford University)",
-  //   date: "2022",
-  //   description: "Comprehensive online specialization covering machine learning algorithms and applications.",
-  //   achievements: [
-  //     "Completed with Distinction",
-  //     "Implemented various ML projects including neural networks from scratch"
-  //   ]
-  // },
   // {
   //   degree: "Drone Programming Certification",
   //   institution: "Udacity",
@@ -201,6 +212,13 @@ export const education = [
 export const honors = [
   {
     id: 1,
+    title: "Dr. APJ Abdul Kalam Young Research Fellow",
+    organization: "TERRE Policy Centre",
+    date: "July 2025",
+    description: "Awarded for outstanding research potential and societal impact for my work on Deep Learning & UAV based crop disease diagnostics."
+  },
+  {
+    id: 2,
     title: "1st Place at ASCE CISSC-2025",
     organization: "ASCE CISSC International Conference",
     date: "Feb 2025",
@@ -216,9 +234,9 @@ export const honors = [
   {
     id: 3,
     title: "Top 20 in Hackathon 7.0",
-    organization: "Cisco ThingQbator",
+    organization: "Nasscom ThingQbator & Cisco's ThingQbator",
     date: "Dec 2024",
-    description: "Shortlisted in top 20 out of 1000+ teams for innovative AI solutions."
+    description: "Shortlisted in top 20 out of 1000+ teams for innovative solution on tackling the pressing issue of plastic waste recycling."
   },
   {
     id: 4,
@@ -237,7 +255,7 @@ export const honors = [
   {
     id: 6,
     title: "Microsoft for Startups – Founders Hub Selection",
-    organization: "Microsoft/Nasscom ThingQbator",
+    organization: "Microsoft",
     date: "Jul 2024",
     description: "Selected for prototyping stage for startup 'ePlast'."
   }
@@ -290,8 +308,24 @@ export const news = [
     date: "December, 2024",
     source: "Tech Innovators Magazine",
     description: "Featured for my research work and achivements in the fall semester of 2023-2024.",
-    link: "https://www.bits-pilani.ac.in/wp-content/uploads/BITSCAN-Issue_44_II-Sem-2023-24.pdf/"
+    link: "https://www.bits-pilani.ac.in/wp-content/uploads/BITSCAN-Issue_44_II-Sem-2023-24.pdf#page=18"
+  },
+  {
+    id: 2,
+    title: "3 PAINTINGS published in MUSINGS 2022",
+    date: "December, 2022",
+    source: "Department's Annual Magazine",
+    description: "Musings is the annual magazine of the Department of Humanities and Social Sciences at the BITS Pilani, Pilani Campus. It is a collection of poems, short stories, one-act plays, and paintings.",
+    link: "https://discovery.bits-pilani.ac.in/Musings/Musings2022/mobile/index.html"
   }
+  // {
+  //   id: 2,
+  //   title: "3 PAINTINGS published in MUSINGS 2022",
+  //   date: "December, 2022",
+  //   source: "Department's Annual Magazine",
+  //   description: "Awarded INR 50,000 for Object Tracking UAV Project at BITS Pilani",
+  //   link: "https://discovery.bits-pilani.ac.in/Musings/Musings2022/mobile/index.html"
+  // }
   // {
   //   id: 3,
   //   title: "Research Grant Awarded for Drone AI Project",
@@ -320,7 +354,7 @@ export const news = [
 //     tags: ["Deep Learning", "Computer Vision", "Robotics", "CNN"],
 //     publicationUrl: "https://example.com/publication1",
 //     githubUrl: "https://github.com"
-//   },
+//   }
 //   {
 //     id: 2,
 //     title: "Multi-Agent Reinforcement Learning for Drone Swarms",
