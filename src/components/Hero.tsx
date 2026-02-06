@@ -23,13 +23,13 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Ojasva Goyal
               <span className="block text-2xl md:text-3xl font-normal mt-2">
-                Data Scientist & <span className="geek-accent">Drone Enthusiast</span>
+                Physical AI Engineer & <span className="geek-accent">Drone Enthusiast</span>
               </span>
             </h1>
             
             <p className="text-lg text-muted-foreground mb-8 max-w-lg">
-              Final year undergraduate with a passion for deep learning and autonomous systems.
-              Exploring the intersection of AI, robotics and sustainability.
+              Physical AI Engineer passionate about deep learning and autonomous systems.
+              Building the future at the intersection of AI, robotics and the physical world.
             </p>
             
             <div className="flex flex-wrap gap-4">
