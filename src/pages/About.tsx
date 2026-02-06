@@ -79,7 +79,7 @@ const About = () => {
                         <Award className="h-8 w-8 text-primary mb-2" />
                         <h3 className="text-xl font-bold mb-1 terminal-text">Experience</h3>
                         <p className="text-sm text-muted-foreground font-mono">
-                          Physical AI Engineer
+                          Physical AI Engineer @ Deloitte
                         </p>
                       </div>
                       

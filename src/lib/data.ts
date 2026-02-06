@@ -1,11 +1,21 @@
 export const experiences = [
   {
     id: 1,
+    title: "AI & Data Analyst",
+    company: "Deloitte",
+    date: "August 2025 – Present",
+    description:
+      ".I currently work in Physical AI @ Deloitte USI, focusing on the design and deployment of intelligent systems that tightly couple learning-based models with physical environments, spanning perception, decision-making, and edge execution.",
+    type: "Full Time",
+    skills: ["NVIDIA AI", "Robot Operating System", "VLA", "Deep Learning"]
+  },
+  {
+    id: 1,
     title: "Undergraduate Researcher (Disruptive Technologies - AI/ML Lab)",
     company: "BITS Pilani, Pilani Campus",
-    date: "Jan 2025 – Present",
+    date: "Jan 2025 – Jul 2025",
     description:
-      "Researching multimodal learning techniques for Visual Question Answering (VQA) systems applied to advertisement analysis. Exploring transformer-based models to enhance interpretability and accuracy in ad-based VQA tasks.",
+      "Worked on multimodal learning techniques for Visual Question Answering (VQA) systems, applied to advertisement analysis. Explored transformer-based models to enhance interpretability and accuracy in ad-based VQA tasks.",
     type: "Study Oriented Project",
     skills: ["Multimodal Learning", "Transformers", "VQA", "Deep Learning"]
   },
