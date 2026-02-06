@@ -32,11 +32,11 @@ const About = () => {
                 </h1>
                 
                 <p className="text-lg text-muted-foreground mb-6">
-                  <span className="text-primary font-mono">{'>'}</span> I'm a final year undergraduate student pursing my bachelors in Civil and Data Science with a focus on artificial intelligence and drone technology. My passion lies in developing innovative solutions at the intersection of deep learning and autonomous systems.
+                  <span className="text-primary font-mono">{'>'}</span> I'm a Physical AI Engineer with a background in Civil Engineering and Data Science from BITS Pilani. My passion lies in developing innovative solutions at the intersection of deep learning, robotics, and autonomous systems.
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8">
-                  <span className="text-primary font-mono">{'>'}</span> With a strong foundation in data science and machine learning, I'm excited to begin my journey as a Data Scientist upon graduation. I love tackling complex problems and creating technology that can make a positive impact.
+                  <span className="text-primary font-mono">{'>'}</span> With a strong foundation in machine learning and hands-on experience with drones, I'm now building the future of physical AI—bridging the gap between intelligent algorithms and real-world robotic systems.
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
@@ -79,7 +79,7 @@ const About = () => {
                         <Award className="h-8 w-8 text-primary mb-2" />
                         <h3 className="text-xl font-bold mb-1 terminal-text">Experience</h3>
                         <p className="text-sm text-muted-foreground font-mono">
-                          Research & Industry Internships
+                          Physical AI Engineer
                         </p>
                       </div>
                       
