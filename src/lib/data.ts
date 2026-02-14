@@ -5,7 +5,7 @@ export const experiences = [
     company: "Deloitte",
     date: "August 2025 – Present",
     description:
-      ".I currently work in Physical AI @ Deloitte USI, focusing on the design and deployment of intelligent systems that tightly couple learning-based models with physical environments, spanning perception, decision-making, and edge execution.",
+      "I currently work in Physical AI @ Deloitte USI, focusing on the design and deployment of intelligent systems that tightly couple learning-based models with physical environments, spanning perception, decision-making, and edge execution.",
     type: "Full Time",
     skills: ["NVIDIA AI", "Robot Operating System", "VLA", "Deep Learning"]
   },
@@ -279,6 +279,14 @@ export const news = [
     source: "",
     description: "Featured in the Director's Annual Report of Pilani Campus for being awarded the Dr. Kalam Fellowship. Grateful to see my work recognized at the institute level.",
     link: "https://www.youtube.com/watch?v=UB2HZpviZo8&t=3932s"
+  },
+  {
+    id: 2,
+    title: "Featured in Pilani Campus- Fall Semester Magazine, BITSCAN (Issue_45)",
+    date: "July, 2025",
+    source: "Tech Innovators Magazine",
+    description: "Featured for 2nd time for my research work and achivements in the spring semester of 2024-2025.",
+    link: "https://www.bits-pilani.ac.in/wp-content/uploads/BITScan_Issue-45_05052025_Sem1.pdf#page=21"
   },
   {
     id: 1,
