@@ -182,6 +182,15 @@ export const skills = [
 
 export const education = [
   {
+    degree: " NVIDIA 𝗖𝗲𝗿𝘁𝗶𝗳𝗶𝗲𝗱 𝗣𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻𝗮𝗹: 𝗔𝗰𝗰𝗲𝗹𝗲𝗿𝗮𝘁𝗲𝗱 𝗗𝗮𝘁𝗮 𝗦𝗰𝗶𝗲𝗻𝗰𝗲",
+    institution: "NVIDIA Deep Learning Institute",
+    date: "Apr 2026",
+    description: "Professional certification from NVIDIA validating expertise in leveraging GPU-accelerated tools and libraries for accelerated data science, high-performance machine learning, and scalable AI development workflows across modern deep learning applications.",
+    // achievements: [
+      
+    // ]
+  },
+  {
     degree: "Bachelor of Engineering in Civil + Minor in Data Science",
     institution: "Birla Institute of Technology & Science, Pilani, Pilani Campus",
     date: "2021 - 2025",
@@ -220,6 +229,13 @@ export const education = [
 ];
 
 export const honors = [
+  {
+    id: 1,
+    title: "𝗢𝘂𝘁𝘀𝘁𝗮𝗻𝗱𝗶𝗻𝗴 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲 𝗔𝘄𝗮𝗿𝗱",
+    organization: "Deloitte U.S. Firms",
+    date: "March 2026",
+    description: "Awarded for building and delivering complex Physical AI use cases in Robotics and Simulation."
+  },
   {
     id: 1,
     title: "Dr. APJ Abdul Kalam Young Research Fellow",
@@ -274,6 +290,30 @@ export const honors = [
 export const news = [
   {
     id: 1,
+    title: "Reviewed Research Papers for IEEE Access",
+    date: "2026",
+    source: "",
+    description: "Contributed as a reviewer for IEEE Access, evaluating multiple research manuscripts in the domains of AI, deep learning, robotics, and computer vision.",
+    link: "https://www.webofscience.com/wos/author/record/PXW-5999-2026"
+  },
+  {
+    id: 2,
+    title: "Received Outstanding Performance Award at Deloitte",
+    date: "March 2026",
+    source: "",
+    description: "Recognized with the OPA award at Deloitte for delivering high-impact work on single-arm and dual-arm synchronous robotic manipulation systems for a leading U.S. pharmaceutical enterprise.",
+    link: "https://www.linkedin.com/posts/ojasva-goyal-476422230_embodiedai-artificialintelligence-physicalai-share-7437491718096289792-7CIK?utm_source=share&utm_medium=member_desktop&rcm=ACoAADm6IhoBiR6wgb4MOj__GgaQvaofHkQbfKE"
+  },
+  {
+    id: 3,
+    title: "Joined Deloitte USI as Analyst @ Physical AI Team",
+    date: "Aug 2025",
+    source: "",
+    description: "Joined Deloitte USI’s Physical AI team as an Analyst, working on next-generation robotics and embodied AI systems for industrial automation. Contributing to Vision-Language-Action (VLA) pipelines, robotic manipulation, simulation workflows using NVIDIA Isaac Sim/Lab, and autonomous AI-driven robotics applications.",
+    link: ""
+  },
+  {
+    id: 4,
     title: "Special Mention in Director's Report, BITS Pilani @ Convocation' 25",
     date: "July 13, 2025",
     source: "",
@@ -281,7 +321,7 @@ export const news = [
     link: "https://www.youtube.com/watch?v=UB2HZpviZo8&t=3932s"
   },
   {
-    id: 2,
+    id: 5,
     title: "Featured in Pilani Campus- Fall Semester Magazine, BITSCAN (Issue_45)",
     date: "July, 2025",
     source: "Tech Innovators Magazine",
@@ -289,7 +329,7 @@ export const news = [
     link: "https://www.bits-pilani.ac.in/wp-content/uploads/BITScan_Issue-45_05052025_Sem1.pdf#page=21"
   },
   {
-    id: 1,
+    id: 6,
     title: "Awarded Dr. APJ Abdul Kalam Young Research Fellowship",
     date: "May 23, 2025",
     source: "",
@@ -297,7 +337,7 @@ export const news = [
     link: "https://www.drkalamfellowship.com/winners-2024-2025.php"
   },
   {
-    id: 1,
+    id: 7,
     title: "🌟 Celebrating the Achievements of Ojasva Goyal! 🌟",
     date: "Feb 24, 2025",
     source: "University News",
@@ -305,7 +345,7 @@ export const news = [
     link: "https://www.bits-pilani.ac.in/news/celebrating-the-achievements-of-ojasva-goyal/"
   },
   {
-    id: 1,
+    id: 8,
     title: "1st Place Win @ AISC CISSC-25",
     date: "Feb 09, 2025",
     source: "University News",
@@ -313,7 +353,7 @@ export const news = [
     link: "https://www.bits-pilani.ac.in/news/triumph-in-innovation-bits-pilani-shines-at-asce-cissc-2025/"
   },
   {
-    id: 2,
+    id: 9,
     title: "Featured in BITS Institute-wide Newsletter, Bitsology",
     date: "February, 2025",
     source: "Tech Innovators Magazine",
@@ -321,7 +361,7 @@ export const news = [
     link: "https://www.bits-pilani.ac.in/BITSology/BITSology-Vol-1.2/"
   },
   {
-    id: 2,
+    id: 10,
     title: "Featured in Pilani Campus- Fall Semester Magazine, BITSCAN (Issue_44)",
     date: "December, 2024",
     source: "Tech Innovators Magazine",
@@ -329,7 +369,7 @@ export const news = [
     link: "https://www.bits-pilani.ac.in/wp-content/uploads/BITSCAN-Issue_44_II-Sem-2023-24.pdf#page=18"
   },
   {
-    id: 2,
+    id: 11,
     title: "3 PAINTINGS published in MUSINGS 2022",
     date: "December, 2022",
     source: "Department's Annual Magazine",

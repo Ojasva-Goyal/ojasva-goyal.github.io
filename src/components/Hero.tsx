@@ -82,14 +82,14 @@ const Hero = () => {
                 
                 <div className="glass-panel p-4 mb-4">
                   <div className="font-mono text-xs text-primary opacity-70 mb-1">LATEST PROJECT</div>
-                  <h3 className="font-medium mb-2">Autonomous UAV System for Crop Disease Monitoring</h3>
+                  <h3 className="font-medium mb-2">Embodied AI for Autonomous Factory Operations</h3>
                   <p className="text-sm text-muted-foreground">
-                    Using computer vision and deep learning to enable drones to detect and classify different crop diseases.
+                    Developing intelligent systems for industrial robotics using Vision-Language-Action models, teleoperation pipelines, sim-to-real learning and autonomous robotic manipulation.
                   </p>
                 </div>
                 
                 <code className="font-mono text-xs text-muted-foreground">
-                  <div className="text-primary">const</div> skills = ['Python', 'TensorFlow', 'Computer Vision', 'Robotics'];
+                  <div className="text-primary">const</div> skills = ["VLA", "Isaac Sim", "Isaac Lab", "ROS 2", "Robot Learning", "Embodied AI"];
                 </code>
               </div>
             </div>
