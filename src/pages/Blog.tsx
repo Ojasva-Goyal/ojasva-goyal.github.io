@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
+import { FunctionsHttpError } from '@supabase/supabase-js';
 import { useToast } from '@/hooks/use-toast';
 
 const Blog = () => {
@@ -55,11 +56,17 @@ const Blog = () => {
         body: { email }
       });
 
+      if (error instanceof FunctionsHttpError && error.context.status === 429) {
+        throw new Error("Too many subscription requests. Please try again in an hour.");
+      }
       if (error) throw error;
+      if (data?.success !== true || typeof data.message !== 'string') {
+        throw new Error("Unexpected subscription response. Please try again later.");
+      }
 
       toast({
         title: "Success!",
-        description: data.message || "Successfully subscribed to newsletter",
+        description: data.message,
       });
 
       // Clear email input
@@ -67,14 +74,14 @@ const Blog = () => {
       
       // Redirect to Medium profile
       setTimeout(() => {
-        window.open('https://medium.com/@ojasvagoyal9', '_blank');
+        window.open('https://medium.com/@ojasvagoyal9', '_blank', 'noopener,noreferrer');
       }, 1000);
 
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Subscription error:', error);
       toast({
         title: "Error",
-        description: error.message || "Failed to subscribe. Please try again.",
+        description: error instanceof Error ? error.message : "Failed to subscribe. Please try again.",
         variant: "destructive",
       });
     } finally {
@@ -217,6 +224,8 @@ const Blog = () => {
               <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                 <Input 
                   type="email" 
+                  required
+                  maxLength={254}
                   placeholder="Your email address" 
                   className="flex-grow"
                   value={email}

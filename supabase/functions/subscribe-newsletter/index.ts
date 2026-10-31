@@ -1,119 +1,20 @@
-import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.4";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2.118.0";
+import { createHandler } from "./handler.ts";
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
-
-interface SubscribeRequest {
-  email: string;
+const supabaseUrl = Deno.env.get("SUPABASE_URL");
+const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+if (!supabaseUrl || !serviceRoleKey) {
+  throw new Error("Missing server-side Supabase configuration");
 }
 
-const handler = async (req: Request): Promise<Response> => {
-  // Handle CORS preflight requests
-  if (req.method === "OPTIONS") {
-    return new Response(null, { headers: corsHeaders });
+const supabase = createClient(supabaseUrl, serviceRoleKey, {
+  auth: { persistSession: false, autoRefreshToken: false },
+});
+
+Deno.serve(createHandler(async (email) => {
+  const { data, error } = await supabase.rpc("subscribe_newsletter", { p_email: email });
+  if (error || typeof data !== "boolean") {
+    throw new Error("Newsletter database operation failed");
   }
-
-  if (req.method !== "POST") {
-    return new Response(
-      JSON.stringify({ error: "Method not allowed" }),
-      {
-        status: 405,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
-    );
-  }
-
-  try {
-    const { email }: SubscribeRequest = await req.json();
-
-    if (!email) {
-      return new Response(
-        JSON.stringify({ error: "Email is required" }),
-        {
-          status: 400,
-          headers: { "Content-Type": "application/json", ...corsHeaders },
-        }
-      );
-    }
-
-    // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return new Response(
-        JSON.stringify({ error: "Invalid email format" }),
-        {
-          status: 400,
-          headers: { "Content-Type": "application/json", ...corsHeaders },
-        }
-      );
-    }
-
-    // Initialize Supabase client
-    const supabase = createClient(
-      Deno.env.get("SUPABASE_URL") ?? "",
-      Deno.env.get("SUPABASE_ANON_KEY") ?? ""
-    );
-
-    // Insert email into newsletter_subscriptions table
-    const { data, error } = await supabase
-      .from("newsletter_subscriptions")
-      .insert({ email })
-      .select();
-
-    if (error) {
-      console.error("Database error:", error);
-      
-      // Handle duplicate email error
-      if (error.code === "23505") {
-        return new Response(
-          JSON.stringify({ 
-            success: true, 
-            message: "Email already subscribed",
-            redirect_url: "https://medium.com/@ojasvagoyal9"
-          }),
-          {
-            status: 200,
-            headers: { "Content-Type": "application/json", ...corsHeaders },
-          }
-        );
-      }
-      
-      return new Response(
-        JSON.stringify({ error: "Failed to subscribe" }),
-        {
-          status: 500,
-          headers: { "Content-Type": "application/json", ...corsHeaders },
-        }
-      );
-    }
-
-    console.log("Newsletter subscription successful:", data);
-
-    return new Response(
-      JSON.stringify({ 
-        success: true, 
-        message: "Successfully subscribed to newsletter",
-        redirect_url: "https://medium.com/@ojasvagoyal9"
-      }),
-      {
-        status: 200,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
-    );
-
-  } catch (error: any) {
-    console.error("Error in subscribe-newsletter function:", error);
-    return new Response(
-      JSON.stringify({ error: "Internal server error" }),
-      {
-        status: 500,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
-    );
-  }
-};
-
-serve(handler);
+  return data;
+}));
