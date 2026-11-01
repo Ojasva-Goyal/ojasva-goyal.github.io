@@ -10,6 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { FunctionsHttpError } from '@supabase/supabase-js';
+import { getSubscriptionErrorMessage } from '@/lib/newsletter';
 import { useToast } from '@/hooks/use-toast';
 
 const Blog = () => {
@@ -39,11 +40,22 @@ const Blog = () => {
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
+    const normalizedEmail = email.trim().toLowerCase();
     
-    if (!email) {
+    if (!normalizedEmail) {
       toast({
         title: "Error",
         description: "Please enter your email address",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    if (new TextEncoder().encode(normalizedEmail).byteLength > 254 ||
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/u.test(normalizedEmail)) {
+      toast({
+        title: "Error",
+        description: "Please enter a valid email address",
         variant: "destructive",
       });
       return;
@@ -53,11 +65,11 @@ const Blog = () => {
 
     try {
       const { data, error } = await supabase.functions.invoke('subscribe-newsletter', {
-        body: { email }
+        body: { email: normalizedEmail }
       });
 
-      if (error instanceof FunctionsHttpError && error.context.status === 429) {
-        throw new Error("Too many subscription requests. Please try again in an hour.");
+      if (error instanceof FunctionsHttpError && error.context instanceof Response) {
+        throw new Error(await getSubscriptionErrorMessage(error.context));
       }
       if (error) throw error;
       if (data?.success !== true || typeof data.message !== 'string') {

@@ -12,7 +12,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "test:newsletter": "deno test supabase/functions/subscribe-newsletter/handler.test.ts",
+    "test:newsletter": "deno test supabase/functions/subscribe-newsletter/handler.test.ts tests/newsletter.test.ts",
     "check:newsletter": "deno check supabase/functions/subscribe-newsletter/index.ts",
     "preview": "vite preview"
   },

@@ -127,6 +127,10 @@ window across all visitors**, including duplicates, atomically across function
 instances. Excess requests receive HTTP 429 and `Retry-After: 3600`. The limiter
 stores one counter, not IP addresses or a growing attempt log.
 
+The signup UI validates email format before submission and displays the function's
+JSON error message for failed requests. If the response is not a recognized JSON
+error, it displays the HTTP status instead of the generic Supabase SDK error.
+
 This global cap limits writes but can be exhausted by an attacker and does not
 prevent distributed compute abuse or verify email ownership. There is no email
 delivery or double-opt-in flow in this repository. Existing unsubscribed records
